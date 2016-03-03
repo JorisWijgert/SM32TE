@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5531EA71C88492300AAF3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EA61C88492300AAF3E4 /* AppDelegate.swift */; };
+		F5531EA91C88492300AAF3E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EA81C88492300AAF3E4 /* ViewController.swift */; };
+		F5531EAC1C88492300AAF3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5531EAA1C88492300AAF3E4 /* Main.storyboard */; };
+		F5531EAE1C88492300AAF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5531EAD1C88492300AAF3E4 /* Assets.xcassets */; };
+		F5531EB11C88492300AAF3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5531EAF1C88492300AAF3E4 /* LaunchScreen.storyboard */; };
+		F5531EBC1C88492300AAF3E4 /* Glow2k15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EBB1C88492300AAF3E4 /* Glow2k15Tests.swift */; };
+		F5531EC71C88492300AAF3E4 /* Glow2k15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EC61C88492300AAF3E4 /* Glow2k15UITests.swift */; };
+		F5531ED51C88572200AAF3E4 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531ED41C88572200AAF3E4 /* GeneralViewController.swift */; };
+		F5531ED71C88581900AAF3E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531ED61C88581900AAF3E4 /* AboutViewController.swift */; };
+		F5531ED91C88582C00AAF3E4 /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531ED81C88582C00AAF3E4 /* EasterEggViewController.swift */; };
+		F5531EDB1C88584200AAF3E4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EDA1C88584200AAF3E4 /* DetailsViewController.swift */; };
+		F5531EDD1C88585600AAF3E4 /* MoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5531EDC1C88585600AAF3E4 /* MoreDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5531EB81C88492300AAF3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5531E9B1C88492200AAF3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5531EA21C88492200AAF3E4;
+			remoteInfo = Glow2k15;
+		};
+		F5531EC31C88492300AAF3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5531E9B1C88492200AAF3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5531EA21C88492200AAF3E4;
+			remoteInfo = Glow2k15;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5531EA31C88492200AAF3E4 /* Glow2k15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glow2k15.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5531EA61C88492300AAF3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5531EA81C88492300AAF3E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5531EAB1C88492300AAF3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5531EAD1C88492300AAF3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5531EB01C88492300AAF3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5531EB21C88492300AAF3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5531EB71C88492300AAF3E4 /* Glow2k15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Glow2k15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5531EBB1C88492300AAF3E4 /* Glow2k15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow2k15Tests.swift; sourceTree = "<group>"; };
+		F5531EBD1C88492300AAF3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5531EC21C88492300AAF3E4 /* Glow2k15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Glow2k15UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5531EC61C88492300AAF3E4 /* Glow2k15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow2k15UITests.swift; sourceTree = "<group>"; };
+		F5531EC81C88492300AAF3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5531ED41C88572200AAF3E4 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralViewController.swift; path = ../GeneralViewController.swift; sourceTree = "<group>"; };
+		F5531ED61C88581900AAF3E4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F5531ED81C88582C00AAF3E4 /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasterEggViewController.swift; sourceTree = "<group>"; };
+		F5531EDA1C88584200AAF3E4 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F5531EDC1C88585600AAF3E4 /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5531EA01C88492200AAF3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EB41C88492300AAF3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EBF1C88492300AAF3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5531E9A1C88492200AAF3E4 = {
+			isa = PBXGroup;
+			children = (
+				F5531EA51C88492200AAF3E4 /* Glow2k15 */,
+				F5531EBA1C88492300AAF3E4 /* Glow2k15Tests */,
+				F5531EC51C88492300AAF3E4 /* Glow2k15UITests */,
+				F5531EA41C88492200AAF3E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5531EA41C88492200AAF3E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5531EA31C88492200AAF3E4 /* Glow2k15.app */,
+				F5531EB71C88492300AAF3E4 /* Glow2k15Tests.xctest */,
+				F5531EC21C88492300AAF3E4 /* Glow2k15UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5531EA51C88492200AAF3E4 /* Glow2k15 */ = {
+			isa = PBXGroup;
+			children = (
+				F5531EA61C88492300AAF3E4 /* AppDelegate.swift */,
+				F5531EA81C88492300AAF3E4 /* ViewController.swift */,
+				F5531ED61C88581900AAF3E4 /* AboutViewController.swift */,
+				F5531ED81C88582C00AAF3E4 /* EasterEggViewController.swift */,
+				F5531EDA1C88584200AAF3E4 /* DetailsViewController.swift */,
+				F5531EDC1C88585600AAF3E4 /* MoreDetailsViewController.swift */,
+				F5531ED41C88572200AAF3E4 /* GeneralViewController.swift */,
+				F5531EAA1C88492300AAF3E4 /* Main.storyboard */,
+				F5531EAD1C88492300AAF3E4 /* Assets.xcassets */,
+				F5531EAF1C88492300AAF3E4 /* LaunchScreen.storyboard */,
+				F5531EB21C88492300AAF3E4 /* Info.plist */,
+			);
+			path = Glow2k15;
+			sourceTree = "<group>";
+		};
+		F5531EBA1C88492300AAF3E4 /* Glow2k15Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5531EBB1C88492300AAF3E4 /* Glow2k15Tests.swift */,
+				F5531EBD1C88492300AAF3E4 /* Info.plist */,
+			);
+			path = Glow2k15Tests;
+			sourceTree = "<group>";
+		};
+		F5531EC51C88492300AAF3E4 /* Glow2k15UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5531EC61C88492300AAF3E4 /* Glow2k15UITests.swift */,
+				F5531EC81C88492300AAF3E4 /* Info.plist */,
+			);
+			path = Glow2k15UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5531EA21C88492200AAF3E4 /* Glow2k15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5531ECB1C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15" */;
+			buildPhases = (
+				F5531E9F1C88492200AAF3E4 /* Sources */,
+				F5531EA01C88492200AAF3E4 /* Frameworks */,
+				F5531EA11C88492200AAF3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glow2k15;
+			productName = Glow2k15;
+			productReference = F5531EA31C88492200AAF3E4 /* Glow2k15.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5531EB61C88492300AAF3E4 /* Glow2k15Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5531ECE1C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15Tests" */;
+			buildPhases = (
+				F5531EB31C88492300AAF3E4 /* Sources */,
+				F5531EB41C88492300AAF3E4 /* Frameworks */,
+				F5531EB51C88492300AAF3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5531EB91C88492300AAF3E4 /* PBXTargetDependency */,
+			);
+			name = Glow2k15Tests;
+			productName = Glow2k15Tests;
+			productReference = F5531EB71C88492300AAF3E4 /* Glow2k15Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5531EC11C88492300AAF3E4 /* Glow2k15UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5531ED11C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15UITests" */;
+			buildPhases = (
+				F5531EBE1C88492300AAF3E4 /* Sources */,
+				F5531EBF1C88492300AAF3E4 /* Frameworks */,
+				F5531EC01C88492300AAF3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5531EC41C88492300AAF3E4 /* PBXTargetDependency */,
+			);
+			name = Glow2k15UITests;
+			productName = Glow2k15UITests;
+			productReference = F5531EC21C88492300AAF3E4 /* Glow2k15UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5531E9B1C88492200AAF3E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fhict;
+				TargetAttributes = {
+					F5531EA21C88492200AAF3E4 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F5531EB61C88492300AAF3E4 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F5531EA21C88492200AAF3E4;
+					};
+					F5531EC11C88492300AAF3E4 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F5531EA21C88492200AAF3E4;
+					};
+				};
+			};
+			buildConfigurationList = F5531E9E1C88492200AAF3E4 /* Build configuration list for PBXProject "Glow2k15" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5531E9A1C88492200AAF3E4;
+			productRefGroup = F5531EA41C88492200AAF3E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5531EA21C88492200AAF3E4 /* Glow2k15 */,
+				F5531EB61C88492300AAF3E4 /* Glow2k15Tests */,
+				F5531EC11C88492300AAF3E4 /* Glow2k15UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5531EA11C88492200AAF3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5531EB11C88492300AAF3E4 /* LaunchScreen.storyboard in Resources */,
+				F5531EAE1C88492300AAF3E4 /* Assets.xcassets in Resources */,
+				F5531EAC1C88492300AAF3E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EB51C88492300AAF3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EC01C88492300AAF3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5531E9F1C88492200AAF3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5531ED91C88582C00AAF3E4 /* EasterEggViewController.swift in Sources */,
+				F5531ED51C88572200AAF3E4 /* GeneralViewController.swift in Sources */,
+				F5531EA91C88492300AAF3E4 /* ViewController.swift in Sources */,
+				F5531EDD1C88585600AAF3E4 /* MoreDetailsViewController.swift in Sources */,
+				F5531ED71C88581900AAF3E4 /* AboutViewController.swift in Sources */,
+				F5531EA71C88492300AAF3E4 /* AppDelegate.swift in Sources */,
+				F5531EDB1C88584200AAF3E4 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EB31C88492300AAF3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5531EBC1C88492300AAF3E4 /* Glow2k15Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5531EBE1C88492300AAF3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5531EC71C88492300AAF3E4 /* Glow2k15UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5531EB91C88492300AAF3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5531EA21C88492200AAF3E4 /* Glow2k15 */;
+			targetProxy = F5531EB81C88492300AAF3E4 /* PBXContainerItemProxy */;
+		};
+		F5531EC41C88492300AAF3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5531EA21C88492200AAF3E4 /* Glow2k15 */;
+			targetProxy = F5531EC31C88492300AAF3E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5531EAA1C88492300AAF3E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5531EAB1C88492300AAF3E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5531EAF1C88492300AAF3E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5531EB01C88492300AAF3E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5531EC91C88492300AAF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5531ECA1C88492300AAF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5531ECC1C88492300AAF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glow2k15/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5531ECD1C88492300AAF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glow2k15/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5531ECF1C88492300AAF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Glow2k15Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glow2k15.app/Glow2k15";
+			};
+			name = Debug;
+		};
+		F5531ED01C88492300AAF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Glow2k15Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glow2k15.app/Glow2k15";
+			};
+			name = Release;
+		};
+		F5531ED21C88492300AAF3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Glow2k15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Glow2k15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5531ED31C88492300AAF3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Glow2k15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.Glow2k15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Glow2k15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5531E9E1C88492200AAF3E4 /* Build configuration list for PBXProject "Glow2k15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5531EC91C88492300AAF3E4 /* Debug */,
+				F5531ECA1C88492300AAF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5531ECB1C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5531ECC1C88492300AAF3E4 /* Debug */,
+				F5531ECD1C88492300AAF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5531ECE1C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5531ECF1C88492300AAF3E4 /* Debug */,
+				F5531ED01C88492300AAF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5531ED11C88492300AAF3E4 /* Build configuration list for PBXNativeTarget "Glow2k15UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5531ED21C88492300AAF3E4 /* Debug */,
+				F5531ED31C88492300AAF3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5531E9B1C88492200AAF3E4 /* Project object */;
+}
