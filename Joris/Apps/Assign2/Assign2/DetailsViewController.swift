@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 class DetailsViewController: UIViewController {
-    @IBOutlet weak var tfToBeShown: UIButton!
+//    @IBOutlet weak var tfToBeShown: UIButton!
  
 }
