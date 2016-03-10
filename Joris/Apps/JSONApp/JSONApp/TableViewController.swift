@@ -58,6 +58,14 @@ class TableViewController: UITableViewController {
         sleep(1)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        var selectedRow = self.tableView.indexPathForSelectedRow
+        var selectedPirate = self.pirates[selectedRow!.row]
+        var controller = segue.destinationViewController as! DetailsViewcontroller
+        controller.selectedPirate = selectedPirate
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         //Set the correct value in this cell

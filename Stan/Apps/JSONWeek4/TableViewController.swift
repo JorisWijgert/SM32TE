@@ -10,7 +10,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
     var pirates = [Pirate]()
     
     func loadJsonData()
@@ -42,8 +42,8 @@ class TableViewController: UITableViewController {
                 let newPirate = Pirate (
                     name: item.objectForKey("name") as! String,
                     life: item.objectForKey("life") as! String,
-                    years_active: item.objectForKey("years_active") as! String,
-                    country_of_origin: item.objectForKey("country_of_origin") as! String,
+                    yearsActive: item.objectForKey("years_active") as! String,
+                    countryOfOrigin: item.objectForKey("country_of_origin") as! String,
                     comments: item.objectForKey("comments") as! String
                 )
                 pirates.append(newPirate)
