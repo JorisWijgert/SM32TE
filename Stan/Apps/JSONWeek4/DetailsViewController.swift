@@ -6,7 +6,8 @@
 //  Copyright © 2016 Fhict. All rights reserved.
 //
 
-import Cocoa
+//import Cocoa
+import UIKit
 
 class DetailsViewController: UIViewController {
 

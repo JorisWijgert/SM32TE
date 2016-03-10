@@ -7,6 +7,7 @@
 //
 
 //import Cocoa
+import UIKit
 
 class TableViewController: UITableViewController {
 
@@ -22,7 +23,7 @@ class TableViewController: UITableViewController {
             {
                 if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data!, 	   options: NSJSONReadingOptions.AllowFragments)
                 {
-                    self.parseJsonData(jsonObject)
+                    self.parseJSONData(jsonObject)
                 }
             }
             catch
@@ -54,5 +55,25 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadJsonData()
+        sleep(1)
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        //Set the correct value in this cell
+        //Do so by looking up the row in de indexpath and choosing the same element in the array
+        var currentRow = indexPath.row;
+        var currentPirate = self.pirates[currentRow]
+        //Set the text in the cell
+        cell.textLabel?.text = currentPirate.name
+        return cell;
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pirates.count
     }
 }

@@ -14,11 +14,11 @@ class Pirate {
     var countryOrigin:String
     var comments:String
     
-    init(name:String, life:String, yearsActive:String, countryOrigin:String, comments:String) {
+    init(name:String, life:String, years_active:String, country_of_origin:String, comments:String) {
         self.name = name
         self.life = life
-        self.yearsActive = yearsActive
-        self.countryOrigin = countryOrigin
+        self.yearsActive = years_active
+        self.countryOrigin = country_of_origin
         self.comments = comments
     }
 }
