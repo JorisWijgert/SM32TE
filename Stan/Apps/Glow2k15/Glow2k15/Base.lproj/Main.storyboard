@@ -20,6 +20,13 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lUD-bx-6bL">
                                 <rect key="frame" x="49" y="277" width="118" height="31"/>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-fk-V4B">
+                                <rect key="frame" x="251" y="395" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="yLq-rO-M3I" eventType="touchUpInside" id="9cw-QC-gIC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -31,7 +38,7 @@
         <!--about-->
         <scene sceneID="K0X-WR-nCz">
             <objects>
-                <viewController storyboardIdentifier="about" id="HN9-0e-OfB" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="about" id="HN9-0e-OfB" customClass="AboutViewController" customModule="Glow2k15" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fZO-WC-FOO"/>
                         <viewControllerLayoutGuide type="bottom" id="1B5-UY-8ZB"/>
@@ -44,25 +51,23 @@
                                 <rect key="frame" x="44" y="67" width="74" height="30"/>
                                 <state key="normal" title="Easter Egg"/>
                                 <connections>
-                                    <action selector="btnEasterEgg:" destination="HN9-0e-OfB" eventType="touchUpInside" id="egM-O3-rVg"/>
+                                    <action selector="btnEasterEgg:" destination="HN9-0e-OfB" eventType="touchUpInside" id="Stq-3H-TIJ"/>
                                     <segue destination="yLq-rO-M3I" kind="presentation" id="ZXc-kt-yK6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-YJ-Epy">
                                 <rect key="frame" x="15" y="132" width="104" height="30"/>
                                 <state key="normal" title="Show TextField"/>
+                                <connections>
+                                    <action selector="btnShowTextField:" destination="HN9-0e-OfB" eventType="touchUpInside" id="pB6-uQ-rkG"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-o6-utJ">
-                                <rect key="frame" x="33" y="181" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="about" id="pqt-ti-NQ8"/>
                     <connections>
-                        <outlet property="tfText" destination="Rah-o6-utJ" id="Ksz-Yq-MuG"/>
+                        <outlet property="btnShowTextField" destination="N7p-YJ-Epy" id="UbP-HS-4ZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNA-yp-YyW" userLabel="First Responder" sceneMemberID="firstResponder"/>

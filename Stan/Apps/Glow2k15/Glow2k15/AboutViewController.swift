@@ -11,11 +11,12 @@ import Foundation
 import UIKit
 
 class AboutViewController: UIViewController {
-    
-    @IBAction func btnEasterEgg(sender: AnyObject) {
-        _ =
-            UIAlertView(
-                title: "Your txt is here:", message: tfText.text, delegate: nil, cancelButtonTitle: "done!")
+    @IBAction func btnEasterEgg(sender: UIButton) {
     }
-    @IBOutlet weak var tfText: UITextField!
+    
+    
+    //@IBAction func btnShowTextField(sender: UIButton) {
+    //}
+    
+    //@IBOutlet weak var tfText: UITextField!
 }

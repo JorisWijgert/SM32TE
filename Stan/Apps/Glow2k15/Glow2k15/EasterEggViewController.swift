@@ -9,6 +9,10 @@
 import Foundation
 
 import UIKit
+
 class EasterEggViewController: UIViewController {
+    @IBAction func btnBack(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion:nil)
+    }
     
 }
