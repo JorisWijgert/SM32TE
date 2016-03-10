@@ -76,4 +76,14 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pirates.count
     }
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //Find the selected Pirate
+        var selectedRow = self.tableView.indexPathForSelectedRow
+        var selectedPirate = self.pirates[selectedRow!.row]
+        var controller = segue.destinationViewController as! DetailsViewController
+        controller.selectedPirate = selectedPirate;
+    }
 }
+
