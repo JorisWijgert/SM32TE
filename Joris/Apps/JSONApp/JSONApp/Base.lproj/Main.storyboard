@@ -8,7 +8,7 @@
         <!--TableView-->
         <scene sceneID="QVO-o3-Xrf">
             <objects>
-                <tableViewController title="TableView" id="w0h-d2-eEh" sceneMemberID="viewController">
+                <tableViewController title="TableView" id="w0h-d2-eEh" customClass="TableViewController" customModule="JSONApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rI9-ds-Ogv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="70" y="386"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Viewcontroller-->
         <scene sceneID="7Zo-mF-SYp">
             <objects>
-                <viewController id="mzX-rB-NrK" sceneMemberID="viewController">
+                <viewController id="mzX-rB-NrK" customClass="DetailsViewcontroller" customModule="JSONApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UWc-So-Tfq"/>
                         <viewControllerLayoutGuide type="bottom" id="5f5-ac-pmn"/>

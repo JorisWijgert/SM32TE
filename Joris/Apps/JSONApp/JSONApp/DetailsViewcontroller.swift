@@ -6,7 +6,7 @@
 //  Copyright © 2016 Fontys. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class DetailsViewcontroller: UIViewController {
 

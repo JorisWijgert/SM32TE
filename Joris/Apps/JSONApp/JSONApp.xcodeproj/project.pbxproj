@@ -15,6 +15,7 @@
 		F5BB30AA1C916861007E5FE7 /* JSONAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB30A91C916861007E5FE7 /* JSONAppUITests.swift */; };
 		F5BB30B81C916A96007E5FE7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB30B71C916A96007E5FE7 /* TableViewController.swift */; };
 		F5BB30BA1C916AC2007E5FE7 /* DetailsViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB30B91C916AC2007E5FE7 /* DetailsViewcontroller.swift */; };
+		F5BB30BC1C916BE9007E5FE7 /* Pirate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB30BB1C916BE9007E5FE7 /* Pirate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F5BB30AB1C916861007E5FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BB30B71C916A96007E5FE7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F5BB30B91C916AC2007E5FE7 /* DetailsViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewcontroller.swift; sourceTree = "<group>"; };
+		F5BB30BB1C916BE9007E5FE7 /* Pirate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pirate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F5BB30951C916860007E5FE7 /* Info.plist */,
 				F5BB30B71C916A96007E5FE7 /* TableViewController.swift */,
 				F5BB30B91C916AC2007E5FE7 /* DetailsViewcontroller.swift */,
+				F5BB30BB1C916BE9007E5FE7 /* Pirate.swift */,
 			);
 			path = JSONApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BB30BC1C916BE9007E5FE7 /* Pirate.swift in Sources */,
 				F5BB308A1C916860007E5FE7 /* AppDelegate.swift in Sources */,
 				F5BB30BA1C916AC2007E5FE7 /* DetailsViewcontroller.swift in Sources */,
 				F5BB30B81C916A96007E5FE7 /* TableViewController.swift in Sources */,
