@@ -10,7 +10,7 @@
 
 class TableViewController: UITableViewController {
 
-    var pirate = [Pirate]()
+    var pirates = [Pirate]()
     
     func loadJsonData()
     {
@@ -31,5 +31,28 @@ class TableViewController: UITableViewController {
             }
         }
         dataTask.resume();
+    }
+    
+    func parseJSONData(jsonObject:AnyObject) {
+        if let jsonData = jsonObject as? NSArray
+        {
+            for item in jsonData
+            {
+                let newPirate = Pirate (
+                    name: item.objectForKey("name") as! String,
+                    life: item.objectForKey("life") as! String,
+                    years_active: item.objectForKey("years_active") as! String,
+                    country_of_origin: item.objectForKey("country_of_origin") as! String,
+                    comments: item.objectForKey("comments") as! String
+                )
+                pirates.append(newPirate)
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.loadJsonData()
     }
 }
