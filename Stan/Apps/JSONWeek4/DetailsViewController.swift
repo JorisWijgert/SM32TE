@@ -26,6 +26,6 @@ class DetailsViewController: UIViewController {
         self.lbName.text = self.selectedPirate?.name
         self.lbLife.text = self.selectedPirate?.life
         self.lbActiveYears.text = self.selectedPirate?.yearsActive
-        self.lbCountryOfBirth.text = self.selectedPirate?.countryOrigin
+        self.lbCountryOfBirth.text = self.selectedPirate?.countryOfOrigin
     }
 }
