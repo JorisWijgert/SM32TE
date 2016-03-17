@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="w0h-d2-eEh" id="aKf-nR-fsw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DlX-cl-ZBD"/>
+                    <navigationItem key="navigationItem" title="Pirates" id="DlX-cl-ZBD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTI-7x-t1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,19 +104,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgE-Js-G6z">
-                                <rect key="frame" x="255" y="144" width="28" height="21"/>
+                                <rect key="frame" x="208" y="144" width="209" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Active Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOy-HG-IPT">
-                                <rect key="frame" x="222" y="173" width="94" height="21"/>
+                                <rect key="frame" x="222" y="173" width="173" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-ha-uA1">
-                                <rect key="frame" x="208" y="202" width="122" height="21"/>
+                                <rect key="frame" x="208" y="202" width="236" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -141,7 +141,7 @@
                         <outlet property="lbComments" destination="hXQ-wE-QhS" id="dCE-1Z-9PE"/>
                         <outlet property="lbCountryOfBirth" destination="TPh-ha-uA1" id="0II-wt-2vo"/>
                         <outlet property="lbLife" destination="EgE-Js-G6z" id="7hY-c8-klu"/>
-                        <outlet property="lbName" destination="Kgn-Cj-gGS" id="xtV-MC-1sq"/>
+                        <outlet property="lbName" destination="Kgn-Cj-gGS" id="J7X-8f-Bm2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixN-bo-hdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
