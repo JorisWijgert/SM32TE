@@ -62,8 +62,8 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         //Set the correct value in this cell
         //Do so by looking up the row in de indexpath and choosing the same element in the array
-        var currentRow = indexPath.row;
-        var currentPirate = self.pirates[currentRow]
+        let currentRow = indexPath.row;
+        let currentPirate = self.pirates[currentRow]
         //Set the text in the cell
         cell.textLabel?.text = currentPirate.name
         return cell;
@@ -80,9 +80,9 @@ class TableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Find the selected Pirate
-        var selectedRow = self.tableView.indexPathForSelectedRow
-        var selectedPirate = self.pirates[selectedRow!.row]
-        var controller = segue.destinationViewController as! DetailsViewcontroller
+        let selectedRow = self.tableView.indexPathForSelectedRow
+        let selectedPirate = self.pirates[selectedRow!.row]
+        let controller = segue.destinationViewController as! DetailsViewcontroller
         controller.selectedPirate = selectedPirate;
     }
 }
