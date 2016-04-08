@@ -94,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvM-X1-wJf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvM-X1-wJf">
                                 <rect key="frame" x="20" y="47" width="560" height="212"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" title="Oproepen in de buurt"/>
@@ -106,14 +106,19 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" title="Nieuwe oproep plaatsen"/>
+                                <connections>
+                                    <segue destination="FoH-1C-Fyi" kind="showDetail" id="Wq2-v9-KDS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rdn-LQ-cmp" firstAttribute="top" secondItem="aiG-cQ-M4v" secondAttribute="bottom" constant="14" id="PGJ-OF-hh3"/>
                             <constraint firstItem="xvM-X1-wJf" firstAttribute="leading" secondItem="KtZ-HH-1dt" secondAttribute="leadingMargin" id="PHf-a3-Zba"/>
+                            <constraint firstItem="xvM-X1-wJf" firstAttribute="top" secondItem="9sw-fh-ztb" secondAttribute="bottom" constant="27" id="SOv-xU-VL7"/>
                             <constraint firstItem="aiG-cQ-M4v" firstAttribute="trailing" secondItem="KtZ-HH-1dt" secondAttribute="trailingMargin" id="ek8-Or-omf"/>
                             <constraint firstItem="xvM-X1-wJf" firstAttribute="trailing" secondItem="KtZ-HH-1dt" secondAttribute="trailingMargin" id="gEW-p8-rLb"/>
+                            <constraint firstItem="aiG-cQ-M4v" firstAttribute="top" secondItem="xvM-X1-wJf" secondAttribute="bottom" constant="23" id="kA5-cD-Fdj"/>
                             <constraint firstItem="aiG-cQ-M4v" firstAttribute="leading" secondItem="KtZ-HH-1dt" secondAttribute="leadingMargin" id="kTH-eV-Xf2"/>
                         </constraints>
                     </view>
@@ -123,6 +128,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGZ-3p-yZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1103" y="412"/>
+        </scene>
+        <!--New Message Maker-->
+        <scene sceneID="ltU-NG-s22">
+            <objects>
+                <viewController id="FoH-1C-Fyi" customClass="NewMessageMaker" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Deo-lw-zkz"/>
+                        <viewControllerLayoutGuide type="bottom" id="rTW-Fg-hic"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kjb-BM-Vtd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-pU-jzm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wKP-pc-R8L"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Nieuwe oproep plaatsen" id="bgl-c2-xg2">
+                                        <barButtonItem key="leftBarButtonItem" title="Terug" style="plain" id="ZS0-02-ody">
+                                            <connections>
+                                                <segue destination="A82-8n-Coq" kind="presentation" id="gpx-gt-ksp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gevonden locatie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxv-3d-ikr">
+                                <rect key="frame" x="231" y="67" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLH-fI-iyN">
+                                <rect key="frame" x="20" y="96" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jxv-3d-ikr" firstAttribute="centerX" secondItem="qLH-fI-iyN" secondAttribute="centerX" id="5hd-rn-azk"/>
+                            <constraint firstAttribute="trailing" secondItem="dmf-pU-jzm" secondAttribute="trailing" id="H9A-zn-xkd"/>
+                            <constraint firstItem="dmf-pU-jzm" firstAttribute="top" secondItem="Deo-lw-zkz" secondAttribute="bottom" id="LbL-tb-3bZ"/>
+                            <constraint firstItem="dmf-pU-jzm" firstAttribute="leading" secondItem="Kjb-BM-Vtd" secondAttribute="leading" id="QFe-RY-X71"/>
+                            <constraint firstItem="Jxv-3d-ikr" firstAttribute="leading" secondItem="Kjb-BM-Vtd" secondAttribute="leadingMargin" constant="211" id="QwP-fl-ccy"/>
+                            <constraint firstItem="qLH-fI-iyN" firstAttribute="top" secondItem="Jxv-3d-ikr" secondAttribute="bottom" constant="8" symbolic="YES" id="Skr-Hy-yjw"/>
+                            <constraint firstAttribute="trailing" secondItem="dmf-pU-jzm" secondAttribute="trailing" id="T5b-eF-qP6"/>
+                            <constraint firstItem="dmf-pU-jzm" firstAttribute="leading" secondItem="Kjb-BM-Vtd" secondAttribute="leading" id="YnE-1R-ffy"/>
+                            <constraint firstItem="Jxv-3d-ikr" firstAttribute="top" secondItem="dmf-pU-jzm" secondAttribute="bottom" constant="7" id="btF-rG-I6o"/>
+                            <constraint firstItem="dmf-pU-jzm" firstAttribute="leading" secondItem="Kjb-BM-Vtd" secondAttribute="leading" id="mUr-3a-yEF"/>
+                            <constraint firstItem="dmf-pU-jzm" firstAttribute="top" secondItem="Kjb-BM-Vtd" secondAttribute="top" id="qoo-Ki-b6l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jxv-3d-ikr" secondAttribute="trailing" constant="211" id="z5N-FK-kc3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LbL-tb-3bZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="locationString" destination="qLH-fI-iyN" id="FGS-kN-anK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2E-Hd-8gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="412"/>
         </scene>
     </scenes>
 </document>
