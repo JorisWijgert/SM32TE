@@ -48,6 +48,12 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
 
                     self.locationString.text = addressString
                 }}})
+//        var loc:CLLocation?
+//        var latati:CLLocationDegrees?
+//        latati = 12.2
+//        var longitu:CLLocationDegrees?
+//        longitu = 12.1
+//        loc = CLLocation(latitude: latati!, longitude: longitu!)
         
     }
     

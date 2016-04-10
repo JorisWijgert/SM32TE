@@ -491,6 +491,7 @@
 				F53070901CB788F100556EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F53070911CB788F100556EB8 /* Build configuration list for PBXNativeTarget "EHBOAppATests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				F53070931CB788F100556EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F53070941CB788F100556EB8 /* Build configuration list for PBXNativeTarget "EHBOAppAUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +509,7 @@
 				F53070961CB788F100556EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
