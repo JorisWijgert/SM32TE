@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -316,30 +316,28 @@
         <!--Table View Controller-->
         <scene sceneID="ZDh-Sr-lK7">
             <objects>
-                <tableViewController id="W0O-Z3-H5N" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hrk-F1-lPh">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbL-Ae-FTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="W0O-Z3-H5N" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1jn-hW-Mom">
+            <objects>
+                <viewController id="vh8-Xi-tGZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HUT-jE-Aiw"/>
+                        <viewControllerLayoutGuide type="bottom" id="9bM-VP-pjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EwF-oW-s4P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gzd-Qm-T5o">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gzd-Qm-T5o" id="2Fc-ul-gRE">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="W0O-Z3-H5N" id="06l-fu-AUW"/>
-                            <outlet property="delegate" destination="W0O-Z3-H5N" id="41O-qt-H2R"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BbL-Ae-FTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-15-VY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="919"/>
+            <point key="canvasLocation" x="2420" y="919"/>
         </scene>
     </scenes>
 </document>
