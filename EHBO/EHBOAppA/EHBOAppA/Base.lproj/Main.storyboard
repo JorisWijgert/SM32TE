@@ -299,7 +299,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aedSwitch" destination="4n1-3q-82z" id="889-cj-rzg"/>
+                        <outlet property="ehboSwitch" destination="w6M-Cm-ahf" id="0CD-GS-hxu"/>
                         <outlet property="locationString" destination="qLH-fI-iyN" id="FGS-kN-anK"/>
+                        <outlet property="oneOneTwoSwitch" destination="XDH-lO-4We" id="50h-kF-zW3"/>
+                        <outlet property="reanimaterSwitch" destination="p0y-D5-36R" id="PlF-4h-3nM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2E-Hd-8gt" userLabel="First Responder" sceneMemberID="firstResponder"/>

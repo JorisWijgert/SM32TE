@@ -16,6 +16,7 @@
 		F530707F1CB788F100556EB8 /* EHBOAppATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530707E1CB788F100556EB8 /* EHBOAppATests.swift */; };
 		F530708A1CB788F100556EB8 /* EHBOAppAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53070891CB788F100556EB8 /* EHBOAppAUITests.swift */; };
 		F53070981CB7BD0300556EB8 /* NewMessageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53070971CB7BD0300556EB8 /* NewMessageMaker.swift */; };
+		F5312CA81CBCDFA300C270F3 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CA71CBCDFA300C270F3 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F53070891CB788F100556EB8 /* EHBOAppAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHBOAppAUITests.swift; sourceTree = "<group>"; };
 		F530708B1CB788F100556EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53070971CB7BD0300556EB8 /* NewMessageMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageMaker.swift; sourceTree = "<group>"; };
+		F5312CA71CBCDFA300C270F3 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				F53070691CB788F100556EB8 /* AppDelegate.swift */,
 				F530706B1CB788F100556EB8 /* ViewController.swift */,
+				F5312CA71CBCDFA300C270F3 /* AppManager.swift */,
 				F530706D1CB788F100556EB8 /* Main.storyboard */,
 				F53070701CB788F100556EB8 /* Assets.xcassets */,
 				F53070721CB788F100556EB8 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F530706C1CB788F100556EB8 /* ViewController.swift in Sources */,
+				F5312CA81CBCDFA300C270F3 /* AppManager.swift in Sources */,
 				F530706A1CB788F100556EB8 /* AppDelegate.swift in Sources */,
 				F5135CA61CBCDBA10071CC61 /* Notify.swift in Sources */,
 				F53070981CB7BD0300556EB8 /* NewMessageMaker.swift in Sources */,
