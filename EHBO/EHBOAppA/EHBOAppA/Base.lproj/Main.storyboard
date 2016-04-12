@@ -153,7 +153,11 @@
                                                 <segue destination="A82-8n-Coq" kind="presentation" id="gpx-gt-ksp"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Bevestig" id="1x1-Ta-8cz"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Bevestig" id="1x1-Ta-8cz">
+                                            <connections>
+                                                <action selector="makeNotify:" destination="FoH-1C-Fyi" id="CZY-SQ-f0D"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -300,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2E-Hd-8gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="412"/>
+            <point key="canvasLocation" x="1900" y="233"/>
         </scene>
     </scenes>
 </document>

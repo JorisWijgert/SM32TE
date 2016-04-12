@@ -47,7 +47,11 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
                     }
 
                     self.locationString.text = addressString
-                }}})
+                }
+            } else{
+                self.locationString.text = "\(latestLocation.coordinate.latitude), \(latestLocation.coordinate.longitude)"
+            }
+        })
 //        var loc:CLLocation?
 //        var latati:CLLocationDegrees?
 //        latati = 12.2
@@ -62,5 +66,8 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
         locationString.text = "locatie is niet opgehaald"
     }
 
+    @IBAction func makeNotify(sender: UIBarButtonItem) {
+        
+    }
 
 }
