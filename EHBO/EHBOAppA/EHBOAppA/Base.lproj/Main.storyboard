@@ -316,8 +316,8 @@
         <!--Table View Controller-->
         <scene sceneID="ZDh-Sr-lK7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BbL-Ae-FTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="W0O-Z3-H5N" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbL-Ae-FTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1756" y="919"/>
         </scene>
