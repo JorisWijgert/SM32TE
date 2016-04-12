@@ -18,12 +18,10 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var reanimaterSwitch: UISwitch!
     
     var locationManager: CLLocationManager = CLLocationManager()
-    var latestLocation: CLLocation?
+    var latestLocation: CLLocation
     
     required init?(coder aDecoder: NSCoder) {
-        //super.init: (coder: NSCoder)
-        super.init(coder: aDecoder)
-        
+        super.init(coder: <#T##NSCoder#>)
     }
     
     override func viewDidLoad() {
@@ -43,7 +41,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         latestLocation = locations[locations.count - 1]
         
-        CLGeocoder().reverseGeocodeLocation(latestLocation!, completionHandler: {(placemarks, error) in
+        CLGeocoder().reverseGeocodeLocation(latestLocation, completionHandler: {(placemarks, error) in
             if (error != nil) {print("reverse failed")}
             if(placemarks != nil){
                 let pm = placemarks! as [CLPlacemark]
@@ -60,7 +58,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
                     self.locationString.text = addressString
                 }
             } else{
-                self.locationString.text = "\(self.latestLocation!.coordinate.latitude), \(self.latestLocation!.coordinate.longitude)"
+                self.locationString.text = "\(self.latestLocation.coordinate.latitude), \(self.latestLocation.coordinate.longitude)"
             }
         })
 //        var loc:CLLocation?
@@ -78,7 +76,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func makeNotify(sender: UIBarButtonItem) {
-        let newNotify = Notify(title: self.locationString.text!, latitude: self.latestLocation!.coordinate.latitude, longitude: self.latestLocation!.coordinate.longitude, aed: self.aedSwitch.on, ehbo: self.ehboSwitch.on, reanimeerder: self.reanimaterSwitch.on, ambulance: self.oneOneTwoSwitch.on, active: true)
+        let newNotify = Notify(title: self.locationString.text!, latitude: self.latestLocation.coordinate.latitude, longitude: self.latestLocation.coordinate.longitude, aed: self.aedSwitch.on, ehbo: self.ehboSwitch.on, reanimeerder: self.reanimaterSwitch.on, ambulance: self.oneOneTwoSwitch.on, active: true)
         AppManager.notifies.append(newNotify)
         
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("DetailsView")

@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5312CB61CBCF9E000C270F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CB51CBCF9E000C270F3 /* AppDelegate.swift */; };
+		F5312CB81CBCF9E000C270F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CB71CBCF9E000C270F3 /* ViewController.swift */; };
+		F5312CBB1CBCF9E000C270F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5312CB91CBCF9E000C270F3 /* Main.storyboard */; };
+		F5312CBD1CBCF9E000C270F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5312CBC1CBCF9E000C270F3 /* Assets.xcassets */; };
+		F5312CC01CBCF9E000C270F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5312CBE1CBCF9E000C270F3 /* LaunchScreen.storyboard */; };
+		F5312CCB1CBCF9E100C270F3 /* EHBOAppBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CCA1CBCF9E100C270F3 /* EHBOAppBTests.swift */; };
+		F5312CD61CBCF9E100C270F3 /* EHBOAppBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CD51CBCF9E100C270F3 /* EHBOAppBUITests.swift */; };
+		F5312CE81CBCFD6200C270F3 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CE31CBCFD6200C270F3 /* AppManager.swift */; };
+		F5312CE91CBCFD6200C270F3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CE41CBCFD6200C270F3 /* DetailsViewController.swift */; };
+		F5312CEA1CBCFD6200C270F3 /* NewMessageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CE51CBCFD6200C270F3 /* NewMessageMaker.swift */; };
+		F5312CEB1CBCFD6200C270F3 /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CE61CBCFD6200C270F3 /* Notify.swift */; };
+		F5312CEC1CBCFD6200C270F3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CE71CBCFD6200C270F3 /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5312CC71CBCF9E100C270F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5312CAA1CBCF9E000C270F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5312CB11CBCF9E000C270F3;
+			remoteInfo = EHBOAppB;
+		};
+		F5312CD21CBCF9E100C270F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5312CAA1CBCF9E000C270F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5312CB11CBCF9E000C270F3;
+			remoteInfo = EHBOAppB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5312CB21CBCF9E000C270F3 /* EHBOAppB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHBOAppB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5312CB51CBCF9E000C270F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5312CB71CBCF9E000C270F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5312CBA1CBCF9E000C270F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5312CBC1CBCF9E000C270F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5312CBF1CBCF9E000C270F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5312CC11CBCF9E000C270F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5312CC61CBCF9E100C270F3 /* EHBOAppBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EHBOAppBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5312CCA1CBCF9E100C270F3 /* EHBOAppBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHBOAppBTests.swift; sourceTree = "<group>"; };
+		F5312CCC1CBCF9E100C270F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5312CD11CBCF9E100C270F3 /* EHBOAppBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EHBOAppBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5312CD51CBCF9E100C270F3 /* EHBOAppBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EHBOAppBUITests.swift; sourceTree = "<group>"; };
+		F5312CD71CBCF9E100C270F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5312CE31CBCFD6200C270F3 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F5312CE41CBCFD6200C270F3 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F5312CE51CBCFD6200C270F3 /* NewMessageMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageMaker.swift; sourceTree = "<group>"; };
+		F5312CE61CBCFD6200C270F3 /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
+		F5312CE71CBCFD6200C270F3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5312CAF1CBCF9E000C270F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CC31CBCF9E100C270F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CCE1CBCF9E100C270F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5312CA91CBCF9E000C270F3 = {
+			isa = PBXGroup;
+			children = (
+				F5312CB41CBCF9E000C270F3 /* EHBOAppB */,
+				F5312CC91CBCF9E100C270F3 /* EHBOAppBTests */,
+				F5312CD41CBCF9E100C270F3 /* EHBOAppBUITests */,
+				F5312CB31CBCF9E000C270F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5312CB31CBCF9E000C270F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5312CB21CBCF9E000C270F3 /* EHBOAppB.app */,
+				F5312CC61CBCF9E100C270F3 /* EHBOAppBTests.xctest */,
+				F5312CD11CBCF9E100C270F3 /* EHBOAppBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5312CB41CBCF9E000C270F3 /* EHBOAppB */ = {
+			isa = PBXGroup;
+			children = (
+				F5312CE31CBCFD6200C270F3 /* AppManager.swift */,
+				F5312CE41CBCFD6200C270F3 /* DetailsViewController.swift */,
+				F5312CE51CBCFD6200C270F3 /* NewMessageMaker.swift */,
+				F5312CE61CBCFD6200C270F3 /* Notify.swift */,
+				F5312CE71CBCFD6200C270F3 /* TableViewController.swift */,
+				F5312CB51CBCF9E000C270F3 /* AppDelegate.swift */,
+				F5312CB71CBCF9E000C270F3 /* ViewController.swift */,
+				F5312CB91CBCF9E000C270F3 /* Main.storyboard */,
+				F5312CBC1CBCF9E000C270F3 /* Assets.xcassets */,
+				F5312CBE1CBCF9E000C270F3 /* LaunchScreen.storyboard */,
+				F5312CC11CBCF9E000C270F3 /* Info.plist */,
+			);
+			path = EHBOAppB;
+			sourceTree = "<group>";
+		};
+		F5312CC91CBCF9E100C270F3 /* EHBOAppBTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5312CCA1CBCF9E100C270F3 /* EHBOAppBTests.swift */,
+				F5312CCC1CBCF9E100C270F3 /* Info.plist */,
+			);
+			path = EHBOAppBTests;
+			sourceTree = "<group>";
+		};
+		F5312CD41CBCF9E100C270F3 /* EHBOAppBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5312CD51CBCF9E100C270F3 /* EHBOAppBUITests.swift */,
+				F5312CD71CBCF9E100C270F3 /* Info.plist */,
+			);
+			path = EHBOAppBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5312CB11CBCF9E000C270F3 /* EHBOAppB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5312CDA1CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppB" */;
+			buildPhases = (
+				F5312CAE1CBCF9E000C270F3 /* Sources */,
+				F5312CAF1CBCF9E000C270F3 /* Frameworks */,
+				F5312CB01CBCF9E000C270F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EHBOAppB;
+			productName = EHBOAppB;
+			productReference = F5312CB21CBCF9E000C270F3 /* EHBOAppB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5312CC51CBCF9E100C270F3 /* EHBOAppBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5312CDD1CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppBTests" */;
+			buildPhases = (
+				F5312CC21CBCF9E100C270F3 /* Sources */,
+				F5312CC31CBCF9E100C270F3 /* Frameworks */,
+				F5312CC41CBCF9E100C270F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5312CC81CBCF9E100C270F3 /* PBXTargetDependency */,
+			);
+			name = EHBOAppBTests;
+			productName = EHBOAppBTests;
+			productReference = F5312CC61CBCF9E100C270F3 /* EHBOAppBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5312CD01CBCF9E100C270F3 /* EHBOAppBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5312CE01CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppBUITests" */;
+			buildPhases = (
+				F5312CCD1CBCF9E100C270F3 /* Sources */,
+				F5312CCE1CBCF9E100C270F3 /* Frameworks */,
+				F5312CCF1CBCF9E100C270F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5312CD31CBCF9E100C270F3 /* PBXTargetDependency */,
+			);
+			name = EHBOAppBUITests;
+			productName = EHBOAppBUITests;
+			productReference = F5312CD11CBCF9E100C270F3 /* EHBOAppBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5312CAA1CBCF9E000C270F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Fontys;
+				TargetAttributes = {
+					F5312CB11CBCF9E000C270F3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H5DDT55EN4;
+					};
+					F5312CC51CBCF9E100C270F3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H5DDT55EN4;
+						TestTargetID = F5312CB11CBCF9E000C270F3;
+					};
+					F5312CD01CBCF9E100C270F3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H5DDT55EN4;
+						TestTargetID = F5312CB11CBCF9E000C270F3;
+					};
+				};
+			};
+			buildConfigurationList = F5312CAD1CBCF9E000C270F3 /* Build configuration list for PBXProject "EHBOAppB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5312CA91CBCF9E000C270F3;
+			productRefGroup = F5312CB31CBCF9E000C270F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5312CB11CBCF9E000C270F3 /* EHBOAppB */,
+				F5312CC51CBCF9E100C270F3 /* EHBOAppBTests */,
+				F5312CD01CBCF9E100C270F3 /* EHBOAppBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5312CB01CBCF9E000C270F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5312CC01CBCF9E000C270F3 /* LaunchScreen.storyboard in Resources */,
+				F5312CBD1CBCF9E000C270F3 /* Assets.xcassets in Resources */,
+				F5312CBB1CBCF9E000C270F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CC41CBCF9E100C270F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CCF1CBCF9E100C270F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5312CAE1CBCF9E000C270F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5312CE81CBCFD6200C270F3 /* AppManager.swift in Sources */,
+				F5312CEC1CBCFD6200C270F3 /* TableViewController.swift in Sources */,
+				F5312CB81CBCF9E000C270F3 /* ViewController.swift in Sources */,
+				F5312CEB1CBCFD6200C270F3 /* Notify.swift in Sources */,
+				F5312CEA1CBCFD6200C270F3 /* NewMessageMaker.swift in Sources */,
+				F5312CB61CBCF9E000C270F3 /* AppDelegate.swift in Sources */,
+				F5312CE91CBCFD6200C270F3 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CC21CBCF9E100C270F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5312CCB1CBCF9E100C270F3 /* EHBOAppBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5312CCD1CBCF9E100C270F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5312CD61CBCF9E100C270F3 /* EHBOAppBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5312CC81CBCF9E100C270F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5312CB11CBCF9E000C270F3 /* EHBOAppB */;
+			targetProxy = F5312CC71CBCF9E100C270F3 /* PBXContainerItemProxy */;
+		};
+		F5312CD31CBCF9E100C270F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5312CB11CBCF9E000C270F3 /* EHBOAppB */;
+			targetProxy = F5312CD21CBCF9E100C270F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5312CB91CBCF9E000C270F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5312CBA1CBCF9E000C270F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5312CBE1CBCF9E000C270F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5312CBF1CBCF9E000C270F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5312CD81CBCF9E100C270F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F5312CD91CBCF9E100C270F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5312CDB1CBCF9E100C270F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EHBOAppB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F5312CDC1CBCF9E100C270F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EHBOAppB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		F5312CDE1CBCF9E100C270F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EHBOAppBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EHBOAppB.app/EHBOAppB";
+			};
+			name = Debug;
+		};
+		F5312CDF1CBCF9E100C270F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EHBOAppBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EHBOAppB.app/EHBOAppB";
+			};
+			name = Release;
+		};
+		F5312CE11CBCF9E100C270F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EHBOAppBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EHBOAppB;
+			};
+			name = Debug;
+		};
+		F5312CE21CBCF9E100C270F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EHBOAppBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.fontys.sm.EHBOAppBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EHBOAppB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5312CAD1CBCF9E000C270F3 /* Build configuration list for PBXProject "EHBOAppB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5312CD81CBCF9E100C270F3 /* Debug */,
+				F5312CD91CBCF9E100C270F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5312CDA1CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5312CDB1CBCF9E100C270F3 /* Debug */,
+				F5312CDC1CBCF9E100C270F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5312CDD1CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5312CDE1CBCF9E100C270F3 /* Debug */,
+				F5312CDF1CBCF9E100C270F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5312CE01CBCF9E100C270F3 /* Build configuration list for PBXNativeTarget "EHBOAppBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5312CE11CBCF9E100C270F3 /* Debug */,
+				F5312CE21CBCF9E100C270F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5312CAA1CBCF9E000C270F3 /* Project object */;
+}
