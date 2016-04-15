@@ -17,6 +17,7 @@
 		F530708A1CB788F100556EB8 /* EHBOAppAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53070891CB788F100556EB8 /* EHBOAppAUITests.swift */; };
 		F53070981CB7BD0300556EB8 /* NewMessageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53070971CB7BD0300556EB8 /* NewMessageMaker.swift */; };
 		F5312CA81CBCDFA300C270F3 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CA71CBCDFA300C270F3 /* AppManager.swift */; };
+		F5312CEE1CC0C38E00C270F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CED1CC0C38E00C270F3 /* User.swift */; };
 		F584D9E01CBCE1BD00D06996 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */; };
 		F584D9E21CBCE58C00D06996 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		F530708B1CB788F100556EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53070971CB7BD0300556EB8 /* NewMessageMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageMaker.swift; sourceTree = "<group>"; };
 		F5312CA71CBCDFA300C270F3 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F5312CED1CC0C38E00C270F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				F5135CA51CBCDBA10071CC61 /* Notify.swift */,
 				F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */,
 				F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */,
+				F5312CED1CC0C38E00C270F3 /* User.swift */,
 			);
 			path = EHBOAppA;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				F5312CA81CBCDFA300C270F3 /* AppManager.swift in Sources */,
 				F530706A1CB788F100556EB8 /* AppDelegate.swift in Sources */,
 				F5135CA61CBCDBA10071CC61 /* Notify.swift in Sources */,
+				F5312CEE1CC0C38E00C270F3 /* User.swift in Sources */,
 				F584D9E01CBCE1BD00D06996 /* TableViewController.swift in Sources */,
 				F53070981CB7BD0300556EB8 /* NewMessageMaker.swift in Sources */,
 				F584D9E21CBCE58C00D06996 /* DetailsViewController.swift in Sources */,

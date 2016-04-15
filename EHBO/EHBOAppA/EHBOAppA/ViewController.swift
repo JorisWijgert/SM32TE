@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
     @IBOutlet weak var Username: UITextField!
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppManager.users.append(User(userName: "Stan", passWord: "Wulms", homeLocation: CLLocation(latitude: CLLocationDegrees(51.18484), longitude: CLLocationDegrees(5.128181))))
+        AppManager.users.append(User(userName: "Joris", passWord: "Wijgert", homeLocation: CLLocation(latitude: CLLocationDegrees(51.18484), longitude: CLLocationDegrees(5.128181))))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -28,17 +31,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logInAction(sender: AnyObject) {
-        if(Username.text!.characters.count > 3 && Password.text!.characters.count > 3){
+        
+        if(AppManager.checkUser(Username.text!, passWord: Password.text!) != nil){
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("MainScreen")
             self.presentViewController(viewController, animated: true, completion: nil)
-        }
-        else if(Username.text!.characters.count <= 3){
-            errorMessage.hidden=false
-            errorMessage.text = "Gebruikersnaam is te kort"
-        }
-        else if(Password.text!.characters.count <= 3){
+        } else{
             errorMessage.hidden = false
-            errorMessage.text = "Wachtwoord is te kort"
+            errorMessage.text = "Gebruikersnaam of wachtwoord is niet correct"
         }
     }
 

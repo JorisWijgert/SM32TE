@@ -10,5 +10,14 @@ import Foundation
 
 class AppManager{
     internal static var notifies = [Notify]()
+    internal static var users = [User]()
     
+    internal static func checkUser(userName:String, passWord:String) -> (User)?{
+        for user in users {
+            if(user.userName == userName && user.passWord == passWord){
+                return user
+            }
+        }
+        return nil
+    }
 }
