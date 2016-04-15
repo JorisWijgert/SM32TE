@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R1q-S7-H6q">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SplashScreen-->
+        <scene sceneID="Sen-wD-IzK">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreen" title="SplashScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R1q-S7-H6q" customClass="SplashScreenController" customModule="EHBOAppA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qPF-Yg-On3"/>
+                        <viewControllerLayoutGuide type="bottom" id="YZ6-UX-Cud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x3A-xV-Sqn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" id="xTj-Ey-U6z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P66-Re-9lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="412"/>
+        </scene>
+        <!--LoginScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" title="LoginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -85,7 +106,7 @@
         <!--MainScreen-->
         <scene sceneID="eMK-ev-Pqy">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" title="MainScreen" id="A82-8n-Coq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" title="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A82-8n-Coq" customClass="MainScreenController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9sw-fh-ztb"/>
                         <viewControllerLayoutGuide type="bottom" id="rdn-LQ-cmp"/>
@@ -113,12 +134,29 @@
                                     <segue destination="FoH-1C-Fyi" kind="showDetail" id="Wq2-v9-KDS"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua1-lZ-3oX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nsH-gC-OP7"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="KRi-Si-DEt">
+                                        <barButtonItem key="leftBarButtonItem" title="Uitloggen" id="a0E-tC-LGT">
+                                            <connections>
+                                                <action selector="logOut:" destination="A82-8n-Coq" id="LI9-Ul-yta"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ua1-lZ-3oX" firstAttribute="leading" secondItem="KtZ-HH-1dt" secondAttribute="leadingMargin" constant="-20" id="4Nu-FR-SiI"/>
                             <constraint firstItem="rdn-LQ-cmp" firstAttribute="top" secondItem="aiG-cQ-M4v" secondAttribute="bottom" constant="14" id="PGJ-OF-hh3"/>
                             <constraint firstItem="xvM-X1-wJf" firstAttribute="leading" secondItem="KtZ-HH-1dt" secondAttribute="leadingMargin" id="PHf-a3-Zba"/>
                             <constraint firstItem="xvM-X1-wJf" firstAttribute="top" secondItem="9sw-fh-ztb" secondAttribute="bottom" constant="27" id="SOv-xU-VL7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ua1-lZ-3oX" secondAttribute="trailing" constant="-20" id="ZSy-9l-bGr"/>
                             <constraint firstItem="aiG-cQ-M4v" firstAttribute="trailing" secondItem="KtZ-HH-1dt" secondAttribute="trailingMargin" id="ek8-Or-omf"/>
                             <constraint firstItem="xvM-X1-wJf" firstAttribute="trailing" secondItem="KtZ-HH-1dt" secondAttribute="trailingMargin" id="gEW-p8-rLb"/>
                             <constraint firstItem="aiG-cQ-M4v" firstAttribute="top" secondItem="xvM-X1-wJf" secondAttribute="bottom" constant="23" id="kA5-cD-Fdj"/>
@@ -127,6 +165,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="welcomeMessage" destination="KRi-Si-DEt" id="dUJ-7T-NFu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGZ-3p-yZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
