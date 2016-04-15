@@ -99,7 +99,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" title="Oproepen in de buurt"/>
                                 <connections>
-                                    <segue destination="AIt-Iu-HEC" kind="showDetail" id="ir8-af-FEU"/>
+                                    <segue destination="4tV-tA-jIj" kind="showDetail" id="ir8-af-FEU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiG-cQ-M4v">
@@ -313,7 +313,7 @@
             </objects>
             <point key="canvasLocation" x="1900" y="233"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Incidenten-->
         <scene sceneID="bcz-4l-4YV">
             <objects>
                 <tableViewController id="AIt-Iu-HEC" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
@@ -323,7 +323,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="laV-y8-INT">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="laV-y8-INT" id="BFf-XV-bTB">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -336,10 +336,17 @@
                             <outlet property="delegate" destination="AIt-Iu-HEC" id="fwf-m3-zQa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Incidenten" id="pOK-sV-CaV">
+                        <barButtonItem key="leftBarButtonItem" title="Terug" id="pOG-Du-mOj" userLabel="Terug">
+                            <connections>
+                                <action selector="btnTerugClick:" destination="AIt-Iu-HEC" id="m9O-Zy-XIG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ssv-vh-NoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="994"/>
+            <point key="canvasLocation" x="2564" y="994"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1jn-hW-Mom">
@@ -357,7 +364,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-15-VY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2420" y="919"/>
+            <point key="canvasLocation" x="3232" y="919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="g9c-dS-8Zv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="un4-s6-k5y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AIt-Iu-HEC" kind="relationship" relationship="rootViewController" id="Unp-FI-gi7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qG0-9Q-7Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="994"/>
         </scene>
     </scenes>
 </document>

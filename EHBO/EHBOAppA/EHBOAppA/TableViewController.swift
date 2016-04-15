@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    
     var notifies = [Notify]()
     
     func loadJsonData()
@@ -86,6 +87,11 @@ class TableViewController: UITableViewController {
         let selectedNotify = self.notifies[selectedRow!.row]
         let controller = segue.destinationViewController as! DetailsViewController
         controller.selectedNotify = selectedNotify;
+    }
+    
+    @IBAction func btnTerugClick(sender: UIBarButtonItem) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("MainScreen")
+        self.presentViewController(viewController, animated: true, completion: nil)
     }
 }
 
