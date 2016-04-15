@@ -357,7 +357,7 @@
         <!--Incidenten-->
         <scene sceneID="bcz-4l-4YV">
             <objects>
-                <tableViewController id="AIt-Iu-HEC" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="IncidentsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AIt-Iu-HEC" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ps1-kY-Ned">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -392,7 +392,7 @@
         <!--Navigation Controller-->
         <scene sceneID="g9c-dS-8Zv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationToIncidents" automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="un4-s6-k5y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

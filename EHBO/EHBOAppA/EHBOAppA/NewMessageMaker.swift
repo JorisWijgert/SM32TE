@@ -78,12 +78,11 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func makeNotify(sender: UIBarButtonItem) {
-        let newNotify = Notify(title: self.locationString.text!, latitude: self.latestLocation!.coordinate.latitude, longitude: self.latestLocation!.coordinate.longitude, aed: self.aedSwitch.on, ehbo: self.ehboSwitch.on, reanimeerder: self.reanimaterSwitch.on, ambulance: self.oneOneTwoSwitch.on, active: true)
-        AppManager.notifies.append(newNotify)
+        let newNotify = Notify(title: "Ongeval " + self.locationString.text!, latitude: self.latestLocation!.coordinate.latitude, longitude: self.latestLocation!.coordinate.longitude, aed: self.aedSwitch.on, ehbo: self.ehboSwitch.on, reanimeerder: self.reanimaterSwitch.on, ambulance: self.oneOneTwoSwitch.on, active: true)
+        AppManager.customNotifies.append(newNotify)
         
-        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("DetailsView")
-        let controller:DetailsViewController = (viewController as? DetailsViewController)!
-        controller.selectedNotify = newNotify
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("NavigationToIncidents")
+        let controller:UINavigationController = (viewController as? UINavigationController)!
         self.presentViewController(controller, animated: true, completion: nil)
     }
 
