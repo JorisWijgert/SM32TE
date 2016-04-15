@@ -47,12 +47,23 @@ class TableViewController: UITableViewController {
                     ehbo: item.objectForKey("EHBO") as! Bool,
                     reanimeerder: item.objectForKey("Reanimeerder") as! Bool,
                     ambulance: item.objectForKey("Ambulance") as! Bool,
-                    active: true
+                    active: item.objectForKey("Active") as! Bool
                 )
                 notifies.append(newNotify)
             }
         }
-        self.tableView.reloadData()
+        for item in notifies {
+            var i = 0
+            var j = 0
+            if item.getActive() == true {
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:i, inSection: 1)], withRowAnimation: UITableViewRowAnimation.None)
+                i = i+1
+            } else {
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:j, inSection: 2)], withRowAnimation: UITableViewRowAnimation.None)
+                j = j+1
+            }
+        }
+
     }
     
     override func viewDidLoad() {

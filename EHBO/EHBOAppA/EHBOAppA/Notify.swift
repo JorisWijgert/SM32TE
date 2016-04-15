@@ -29,5 +29,23 @@ class Notify {
         self.ambulance = ambulance
         self.active = active
     }
+    
+    init(notify:Notify) {
+        self.title = notify.title
+        self.latitude = notify.latitude
+        self.longitude = notify.longitude
+        self.aed = notify.aed
+        self.ehbo = notify.ehbo
+        self.reanimeerder = notify.reanimeerder
+        self.ambulance = notify.ambulance
+        self.active = notify.active
+        
+    }
+    
+    func getActive()->Bool{
+        return self.active!
+    }
+    
+    
 
 }
