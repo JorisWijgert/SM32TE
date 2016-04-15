@@ -53,22 +53,25 @@ class TableViewController: UITableViewController {
                 notifies.append(newNotify)
             }
         }
-        var i = 1
-        var j = 1
-        for item in notifies {
-            print(item.getActive())
-            if item.getActive() == true {
-                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
-                
-                print("i: \(i)")
-                i = i+1
-            } else {
-                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:j, inSection: 1)], withRowAnimation: UITableViewRowAnimation.None)
-                
-                print("j: \(j)")
-                j = j+1
-            }
-        }
+//        var i = 1
+//        var j = 1
+//        print(notifies.count)
+//        for item in notifies {
+//            
+//            print(item.getActive())
+//            if item.getActive() == true {
+//                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+//                
+//                print("i: \(i)")
+//                i = i+1
+//            } else {
+//                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:j, inSection: 1)], withRowAnimation: UITableViewRowAnimation.None)
+//                
+//                print("j: \(j)")
+//                j = j+1
+//            }
+//        }
+        self.tableView.reloadData()
 
     }
     
@@ -90,7 +93,7 @@ class TableViewController: UITableViewController {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
