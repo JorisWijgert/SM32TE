@@ -71,6 +71,7 @@ class TableViewController: UITableViewController {
 //                j = j+1
 //            }
 //        }
+        
         self.tableView.reloadData()
 
     }
