@@ -395,7 +395,7 @@
         <!--Incidenten-->
         <scene sceneID="bcz-4l-4YV">
             <objects>
-                <tableViewController id="AIt-Iu-HEC" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="IncidentsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AIt-Iu-HEC" customClass="TableViewController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ps1-kY-Ned">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,28 +427,10 @@
             </objects>
             <point key="canvasLocation" x="2564" y="994"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="1jn-hW-Mom">
-            <objects>
-                <viewController id="vh8-Xi-tGZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HUT-jE-Aiw"/>
-                        <viewControllerLayoutGuide type="bottom" id="9bM-VP-pjr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EwF-oW-s4P">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-15-VY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3232" y="919"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="g9c-dS-8Zv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationToIncidents" automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="un4-s6-k5y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

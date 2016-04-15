@@ -9,7 +9,9 @@
 import Foundation
 
 class AppManager{
-    internal static var notifies = [Notify]()
+    internal static var busyNotifies = [Notify]()
+    internal static var nonBusyNotifies = [Notify]()
+    internal static var customNotifies = [Notify]()
     internal static var users = [User]()
     
     internal static func checkUser(userName:String, passWord:String) -> (User)?{
