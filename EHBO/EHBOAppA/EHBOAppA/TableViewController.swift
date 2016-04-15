@@ -39,6 +39,7 @@ class TableViewController: UITableViewController {
         {
             for item in jsonData
             {
+                print(item.objectForKey("Active"))
                 let newNotify = Notify (
                     title: item.objectForKey("Title") as! String,
                     latitude: item.objectForKey("Latitude") as! Double,
@@ -52,14 +53,19 @@ class TableViewController: UITableViewController {
                 notifies.append(newNotify)
             }
         }
+        var i = 1
+        var j = 1
         for item in notifies {
-            var i = 0
-            var j = 0
+            print(item.getActive())
             if item.getActive() == true {
-                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:i, inSection: 1)], withRowAnimation: UITableViewRowAnimation.None)
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:i, inSection: 0)], withRowAnimation: UITableViewRowAnimation.None)
+                
+                print("i: \(i)")
                 i = i+1
             } else {
-                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:j, inSection: 2)], withRowAnimation: UITableViewRowAnimation.None)
+                self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow:j, inSection: 1)], withRowAnimation: UITableViewRowAnimation.None)
+                
+                print("j: \(j)")
                 j = j+1
             }
         }
@@ -84,7 +90,7 @@ class TableViewController: UITableViewController {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
