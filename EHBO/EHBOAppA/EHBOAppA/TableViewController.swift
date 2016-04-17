@@ -56,6 +56,7 @@ class TableViewController: UITableViewController {
                 }
             }
         }
+        AppManager.busyNotifies.appendContentsOf(AppManager.customNotifies)
         self.tableView.reloadData()
 
 
