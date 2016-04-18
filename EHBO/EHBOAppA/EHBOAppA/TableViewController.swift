@@ -110,13 +110,19 @@ class TableViewController: UITableViewController {
     }
     
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        //Find the selected Pirate
-//        let selectedRow = self.tableView.indexPathForSelectedRow
-//        //let selectedNotify = self.notifies[selectedRow!.row]
-//        let controller = segue.destinationViewController as! DetailsViewController
-//        controller.selectedNotify = selectedNotify;
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //Find the selected Notify
+        let selectedRow = self.tableView.indexPathForSelectedRow
+        let selectedNotify:Notify?
+        if selectedRow?.section == 0 {
+            selectedNotify = AppManager.busyNotifies[selectedRow!.row]
+        }
+        else{
+            selectedNotify = AppManager.nonBusyNotifies[selectedRow!.row]
+        }
+        let controller = segue.destinationViewController as! NotifyViewController
+        controller.selectedNotify = selectedNotify;
+    }
     
     @IBAction func btnTerugClick(sender: UIBarButtonItem) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("MainScreen")

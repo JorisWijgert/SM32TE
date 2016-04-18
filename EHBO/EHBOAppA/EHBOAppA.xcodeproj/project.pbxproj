@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F5135CA61CBCDBA10071CC61 /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5135CA51CBCDBA10071CC61 /* Notify.swift */; };
+		F52C55DD1CC55FF80079F255 /* NotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C55DC1CC55FF80079F255 /* NotifyViewController.swift */; };
 		F530706A1CB788F100556EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53070691CB788F100556EB8 /* AppDelegate.swift */; };
 		F530706C1CB788F100556EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530706B1CB788F100556EB8 /* ViewController.swift */; };
 		F530706F1CB788F100556EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F530706D1CB788F100556EB8 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		F5135CA51CBCDBA10071CC61 /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
+		F52C55DC1CC55FF80079F255 /* NotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyViewController.swift; sourceTree = "<group>"; };
 		F53070661CB788F100556EB8 /* EHBOAppA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EHBOAppA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53070691CB788F100556EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F530706B1CB788F100556EB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				F530706B1CB788F100556EB8 /* ViewController.swift */,
 				F5312CA71CBCDFA300C270F3 /* AppManager.swift */,
 				F530706D1CB788F100556EB8 /* Main.storyboard */,
+				F52C55DC1CC55FF80079F255 /* NotifyViewController.swift */,
 				F53070701CB788F100556EB8 /* Assets.xcassets */,
 				F53070721CB788F100556EB8 /* LaunchScreen.storyboard */,
 				F53070751CB788F100556EB8 /* Info.plist */,
@@ -288,6 +291,7 @@
 				F530706A1CB788F100556EB8 /* AppDelegate.swift in Sources */,
 				F5312CF01CC0D9DB00C270F3 /* SplashScreenController.swift in Sources */,
 				F5312CF21CC0E56200C270F3 /* MainScreenController.swift in Sources */,
+				F52C55DD1CC55FF80079F255 /* NotifyViewController.swift in Sources */,
 				F5135CA61CBCDBA10071CC61 /* Notify.swift in Sources */,
 				F5312CEE1CC0C38E00C270F3 /* User.swift in Sources */,
 				F584D9E01CBCE1BD00D06996 /* TableViewController.swift in Sources */,
