@@ -234,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F53070611CB788F100556EB8 /* Build configuration list for PBXProject "EHBOAppA" */;
+			buildConfigurationList = F53070611CB788F100556EB8 /* Build configuration list for PBXProject "AHBO" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -513,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F53070611CB788F100556EB8 /* Build configuration list for PBXProject "EHBOAppA" */ = {
+		F53070611CB788F100556EB8 /* Build configuration list for PBXProject "AHBO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F530708C1CB788F100556EB8 /* Debug */,

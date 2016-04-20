@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:EHBOAppA.xcodeproj">
+      location = "self:/Users/fhict/Documents/SM32TE/EHBO/EHBOAppA/AHBO.xcodeproj">
    </FileRef>
 </Workspace>
