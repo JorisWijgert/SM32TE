@@ -568,6 +568,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e7-pd-KII">
                                                 <rect key="frame" x="494" y="10" width="58" height="30"/>
                                                 <state key="normal" title="Voer uit"/>
+                                                <connections>
+                                                    <action selector="btnDoReanimate:" destination="Hok-TX-3S9" eventType="touchUpInside" id="42R-O8-Qyq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -588,6 +591,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-YC-FdD">
                                                 <rect key="frame" x="494" y="12" width="58" height="30"/>
                                                 <state key="normal" title="Voer uit"/>
+                                                <connections>
+                                                    <action selector="btnDoEHBO:" destination="Hok-TX-3S9" eventType="touchUpInside" id="qnQ-Q3-3cb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -608,6 +614,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ya-VN-x91">
                                                 <rect key="frame" x="494" y="12" width="58" height="30"/>
                                                 <state key="normal" title="Voer uit"/>
+                                                <connections>
+                                                    <action selector="btnDoAED:" destination="Hok-TX-3S9" eventType="touchUpInside" id="Vf5-pH-Ucy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -652,7 +661,7 @@
         <!--Task Controller-->
         <scene sceneID="Cl5-fd-Xw3">
             <objects>
-                <viewController id="Fph-3d-Xdf" customClass="TaskController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fph-3d-Xdf" customClass="TaskController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xgv-Nx-zHD"/>
                         <viewControllerLayoutGuide type="bottom" id="RVI-9e-XLw"/>
@@ -661,32 +670,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-fX-pwZ">
-                                <rect key="frame" x="20" y="262" width="560" height="220"/>
-                            </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-7h-Vys">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-T6-fbm">
+                                <rect key="frame" x="37" y="91" width="526" height="144"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-7h-Vys">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="s4r-LD-NBg"/>
+                                </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="bou-9d-I4Y">
+                                    <navigationItem title="Taak" id="bou-9d-I4Y">
                                         <barButtonItem key="leftBarButtonItem" title="Annuleer" id="E9J-Tf-nEZ">
                                             <connections>
-                                                <segue destination="Hok-TX-3S9" kind="presentation" id="ver-3G-Jfh"/>
+                                                <segue destination="4tV-tA-jIj" kind="presentation" id="Xf1-xS-M9m"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-T6-fbm">
-                                <rect key="frame" x="37" y="84" width="526" height="144"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZVg-T6-fbm" secondAttribute="trailing" constant="17" id="AOi-rg-GYP"/>
+                            <constraint firstItem="ZVg-T6-fbm" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" constant="17" id="KeU-gc-kuG"/>
+                            <constraint firstItem="RxJ-7h-Vys" firstAttribute="top" secondItem="iS3-x4-ZBa" secondAttribute="topMargin" id="Ola-de-22T"/>
+                            <constraint firstItem="RxJ-7h-Vys" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" constant="-20" id="gNL-De-uX3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RxJ-7h-Vys" secondAttribute="trailing" constant="-20" id="tll-hF-dDO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lblInformatie" destination="ZVg-T6-fbm" id="K3i-6t-Aeu"/>
+                        <outlet property="titleBar" destination="bou-9d-I4Y" id="AVW-1J-Nma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-20-p7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -717,7 +734,7 @@
         <image name="SplashScreenIcon" width="443" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ver-3G-Jfh"/>
+        <segue reference="Xf1-xS-M9m"/>
         <segue reference="eOy-Ie-TuJ"/>
     </inferredMetricsTieBreakers>
 </document>

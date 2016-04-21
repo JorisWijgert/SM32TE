@@ -10,5 +10,22 @@ import UIKit
 
 class TaskController: UIViewController {
 
+    var wissel: Int32?
+    
     @IBOutlet weak var lblInformatie: UILabel!
+    @IBOutlet weak var titleBar: UINavigationItem!
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        if wissel == 1 {
+            lblInformatie.text = "Ga naar de plek van het ongeval. Zie het kaartje beneden voor de kortste route."
+            titleBar.title = "Reanimeren"
+        } else if wissel == 2 {
+            lblInformatie.text = "Breng het EHBO kistje naar de plek van het ongeval. Zie het kaartje beneden voor de kortste route."
+            titleBar.title = "EHBO kist"
+        } else if wissel == 3 {
+            lblInformatie.text = "Breng de AED naar de plek van het ongeval. Zie het kaartje beneden voor de kortste route."
+            titleBar.title = "AED"
+        }
+    }
 }

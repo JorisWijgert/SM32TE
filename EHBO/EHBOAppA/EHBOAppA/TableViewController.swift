@@ -113,7 +113,7 @@ class TableViewController: UITableViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //Find the selected Notify
+        // Give information to the next page.
         let selectedRow = self.tableView.indexPathForSelectedRow
         let selectedNotify:Notify?
         if selectedRow?.section == 0 {

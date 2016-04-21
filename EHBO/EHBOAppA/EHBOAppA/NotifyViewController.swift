@@ -56,5 +56,25 @@ class NotifyViewController: UIViewController {
     @IBAction func CallAction(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "tel://0612345678")!)
     }
+    @IBAction func btnDoReanimate(sender: UIButton) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
+        let controller:TaskController = (viewController as? TaskController)!
+        controller.wissel = 1
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+
+    @IBAction func btnDoEHBO(sender: UIButton) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
+        let controller:TaskController = (viewController as? TaskController)!
+        controller.wissel = 2
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnDoAED(sender: UIButton) {
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
+        let controller:TaskController = (viewController as? TaskController)!
+        controller.wissel = 3
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
     
 }
