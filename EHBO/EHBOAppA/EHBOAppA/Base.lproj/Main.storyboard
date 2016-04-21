@@ -652,7 +652,6 @@
         <!--Task Controller-->
         <scene sceneID="Cl5-fd-Xw3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-20-p7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Fph-3d-Xdf" customClass="TaskController" customModule="EHBOAppA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xgv-Nx-zHD"/>
@@ -690,6 +689,7 @@
                         <outlet property="lblInformatie" destination="ZVg-T6-fbm" id="K3i-6t-Aeu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-20-p7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4019" y="994"/>
         </scene>
