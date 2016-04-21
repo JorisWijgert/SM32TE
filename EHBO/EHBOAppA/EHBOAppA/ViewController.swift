@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     }
 
 
+    // Login knop. Hier owrdt gecontroleerd op gebruikersnaam & Wachtwoord.
     @IBAction func logInAction(sender: AnyObject) {
         
         if(AppManager.checkUser(Username.text!, passWord: Password.text!) != nil){

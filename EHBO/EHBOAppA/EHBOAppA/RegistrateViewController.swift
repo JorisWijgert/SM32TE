@@ -16,6 +16,7 @@ class RegistrateViewController: UIViewController {
     @IBOutlet weak var tfUserName: UITextField!
     @IBOutlet weak var tfPassWord: UITextField!
     
+    // Knop waarbij gecontroleerd wordt of alles ingevoerd is.
     @IBAction func RegistrateAction(sender: AnyObject) {
         if tfUserName.text?.characters.count <= 0 {
             lblErrorMessage.hidden = false

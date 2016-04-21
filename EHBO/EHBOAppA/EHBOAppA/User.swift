@@ -13,20 +13,24 @@ class User{
     var passWord:String=""
     var homeLocation:CLLocation
     
+    //Constructor voor de 'User' klasse.
     init(userName:String, passWord:String, homeLocation:CLLocation){
         self.userName = userName
         self.passWord = passWord
         self.homeLocation = homeLocation
     }
     
+    //Methode om gebruikersnaam op te halen.
     func getUserName()->String{
         return self.userName
     }
     
+    //Methode om wachtwoord op te halen.
     func getPassWord()->String{
         return self.passWord
     }
     
+    //Methode om locatie op te halen.
     func getHomeLocation()->CLLocation{
         return self.homeLocation
     }

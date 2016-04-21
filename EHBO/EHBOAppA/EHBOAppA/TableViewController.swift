@@ -13,6 +13,7 @@ class TableViewController: UITableViewController {
     
     func loadJsonData()
     {
+        //URL waar de JSON staat.
         let url = NSURL(string: "http://athena.fhict.nl/users/i329146/JSON/notifies.json")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
@@ -72,6 +73,7 @@ class TableViewController: UITableViewController {
         super.viewDidAppear(animated)
     }
     
+    //De twee gedeelten in de tabel.
     override func tableView(tableView: UITableView, titleForHeaderInSection section:Int) -> String?{
         if section == 0{
             return "Hulp nodig"

@@ -40,6 +40,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // Haalt de locatie op
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         latestLocation = locations[locations.count - 1]
         
@@ -77,6 +78,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
         locationString.text = "locatie is niet opgehaald"
     }
 
+    // Hier wordt het ongeval aangemaakt. Deze zal te zien zijn in de lijst.
     @IBAction func makeNotify(sender: UIBarButtonItem) {
         let newNotify = Notify(title: "Ongeval " + self.locationString.text!, latitude: self.latestLocation!.coordinate.latitude, longitude: self.latestLocation!.coordinate.longitude, aed: AppManager.boolToActionType(self.aedSwitch.on), ehbo: AppManager.boolToActionType(self.ehboSwitch.on), reanimeerder: AppManager.boolToActionType(self.reanimaterSwitch.on), ambulance: AppManager.boolToActionType(self.oneOneTwoSwitch.on), active: true)
         AppManager.customNotifies.append(newNotify)

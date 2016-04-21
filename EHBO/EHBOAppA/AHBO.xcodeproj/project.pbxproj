@@ -22,7 +22,6 @@
 		F5312CF01CC0D9DB00C270F3 /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CEF1CC0D9DB00C270F3 /* SplashScreenController.swift */; };
 		F5312CF21CC0E56200C270F3 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5312CF11CC0E56200C270F3 /* MainScreenController.swift */; };
 		F584D9E01CBCE1BD00D06996 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */; };
-		F584D9E21CBCE58C00D06996 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */; };
 		F5E0306E1CC8BA7900D1F2B7 /* RegistrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E0306D1CC8BA7900D1F2B7 /* RegistrateViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		F5312CEF1CC0D9DB00C270F3 /* SplashScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		F5312CF11CC0E56200C270F3 /* MainScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
 		F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F5E0306D1CC8BA7900D1F2B7 /* RegistrateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +127,6 @@
 				F53070971CB7BD0300556EB8 /* NewMessageMaker.swift */,
 				F5135CA51CBCDBA10071CC61 /* Notify.swift */,
 				F584D9DF1CBCE1BD00D06996 /* TableViewController.swift */,
-				F584D9E11CBCE58C00D06996 /* DetailsViewController.swift */,
 				F5312CED1CC0C38E00C270F3 /* User.swift */,
 				F5312CEF1CC0D9DB00C270F3 /* SplashScreenController.swift */,
 				F5312CF11CC0E56200C270F3 /* MainScreenController.swift */,
@@ -300,7 +297,6 @@
 				F5312CEE1CC0C38E00C270F3 /* User.swift in Sources */,
 				F584D9E01CBCE1BD00D06996 /* TableViewController.swift in Sources */,
 				F53070981CB7BD0300556EB8 /* NewMessageMaker.swift in Sources */,
-				F584D9E21CBCE58C00D06996 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

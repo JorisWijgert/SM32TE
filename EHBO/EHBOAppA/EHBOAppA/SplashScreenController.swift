@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 
 class SplashScreenController: UIViewController {
+    // Twee gebruikers
     override func viewDidLoad() {
         super.viewDidLoad()
         AppManager.users.append(User(userName: "Stan", passWord: "Wulms", homeLocation: CLLocation(latitude: CLLocationDegrees(51.18484), longitude: CLLocationDegrees(5.128181))))
@@ -26,6 +27,7 @@ class SplashScreenController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Functie die controleert of je ingelogd bent geweest. Zo ja, dan logt hij je automatisch in.
     func autoLogin(){
         let preferences = NSUserDefaults.standardUserDefaults()
         let currentUserKey = "currentUser"

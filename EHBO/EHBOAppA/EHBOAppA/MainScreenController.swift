@@ -19,6 +19,8 @@ class MainScreenController: UIViewController {
             welcomeMessage.title = "Welkom \(preferences.objectForKey(currentUserKey)!)"
         }
     }
+    
+    //Knop methode om uit te loggen.
     @IBAction func logOut(sender: UIBarButtonItem) {
         let preferences = NSUserDefaults.standardUserDefaults()
         let currentUserKey = "currentUser"

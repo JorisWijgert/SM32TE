@@ -19,6 +19,7 @@ class Notify {
     var ambulance:AppManager.actionType?
     var active:Bool?
     
+    //Constructor met alle waarden.
     init(title:String, latitude:Double, longitude:Double, aed:AppManager.actionType, ehbo:AppManager.actionType, reanimeerder:AppManager.actionType, ambulance:AppManager.actionType, active:Bool) {
         self.title = title
         self.latitude = latitude
@@ -30,6 +31,7 @@ class Notify {
         self.active = active
     }
     
+    //Constructor waar een Notify meegegeven wordt.
     init(notify:Notify) {
         self.title = notify.title
         self.latitude = notify.latitude
@@ -42,6 +44,7 @@ class Notify {
         
     }
     
+    //Methode om active op te halen.
     func getActive()->Bool{
         return self.active!
     }

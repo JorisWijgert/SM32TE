@@ -14,6 +14,7 @@ class AppManager{
     internal static var customNotifies = [Notify]()
     internal static var users = [User]()
     
+    // Checkt of de user bestaat.
     internal static func checkUser(userName:String, passWord:String) -> (User)?{
         for user in users {
             if(user.userName == userName && user.passWord == passWord){
@@ -23,6 +24,7 @@ class AppManager{
         return nil
     }
     
+    // Zet de bool om naar een ActionType (binnengekregen van JSON)
     internal static func boolToActionType(inputBoolean: Bool) -> AppManager.actionType{
         if (inputBoolean){
             let randInt = arc4random_uniform(2)
