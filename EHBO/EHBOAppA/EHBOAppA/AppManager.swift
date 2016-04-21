@@ -39,5 +39,8 @@ class AppManager{
         }
     }
     
-    internal enum actionType {case ToDo, Done, NoNeed}
+    internal enum actionType {
+        case ToDo
+        case Done
+        case NoNeed}
 }

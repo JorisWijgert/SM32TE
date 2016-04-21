@@ -529,46 +529,8 @@
                                             <constraint firstItem="Vf6-B7-0Mx" firstAttribute="leading" secondItem="oBO-w3-8g6" secondAttribute="leading" constant="215" id="mdw-lp-3xq"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eq5-AV-H9A">
-                                        <rect key="frame" x="0.0" y="71" width="560" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EHBO kistje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKc-2T-OV6">
-                                                <rect key="frame" x="8" y="14" width="110" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBc-Gc-ZLY">
-                                                <rect key="frame" x="506" y="12" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="GFt-3E-6FE"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-sC-fWl">
-                                        <rect key="frame" x="0.0" y="121" width="560" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XU-ov-bQd">
-                                                <rect key="frame" x="8" y="19" width="38" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-VQ-pdv">
-                                                <rect key="frame" x="506" y="15" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="qWz-ar-SNm"/>
-                                        </constraints>
-                                    </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJt-Bg-8YD">
-                                        <rect key="frame" x="0.0" y="171" width="560" height="50"/>
+                                        <rect key="frame" x="0.0" y="71" width="560" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="112 Bellen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVR-5b-jDe">
                                                 <rect key="frame" x="8" y="19" width="77" height="21"/>
@@ -576,17 +538,26 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akb-i1-rQe">
-                                                <rect key="frame" x="506" y="15" width="46" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-f7-h7U">
+                                                <rect key="frame" x="509" y="4" width="43" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="2Pt-MD-tI8"/>
+                                                    <constraint firstAttribute="width" constant="43" id="v3e-jt-pbK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="CallButton"/>
+                                                <connections>
+                                                    <action selector="CallAction:" destination="Hok-TX-3S9" eventType="touchUpInside" id="mJ8-VU-emU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="CEM-f7-h7U" secondAttribute="trailing" constant="8" id="MAA-pm-zVk"/>
                                             <constraint firstAttribute="height" constant="50" id="QfF-tq-AAg"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cY-jY-gUd">
-                                        <rect key="frame" x="0.0" y="221" width="560" height="50"/>
+                                        <rect key="frame" x="0.0" y="121" width="560" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reanimeerder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAf-Hd-RUt">
                                                 <rect key="frame" x="8" y="19" width="107" height="21"/>
@@ -594,14 +565,55 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e7-pd-KII">
-                                                <rect key="frame" x="506" y="10" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e7-pd-KII">
+                                                <rect key="frame" x="494" y="10" width="58" height="30"/>
+                                                <state key="normal" title="Voer uit"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="66x-VF-fGz"/>
+                                            <constraint firstAttribute="trailing" secondItem="0e7-pd-KII" secondAttribute="trailing" constant="8" id="HxU-3J-bjX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eq5-AV-H9A">
+                                        <rect key="frame" x="0.0" y="171" width="560" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EHBO kistje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKc-2T-OV6">
+                                                <rect key="frame" x="8" y="14" width="110" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-YC-FdD">
+                                                <rect key="frame" x="494" y="12" width="58" height="30"/>
+                                                <state key="normal" title="Voer uit"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GFt-3E-6FE"/>
+                                            <constraint firstAttribute="trailing" secondItem="rdY-YC-FdD" secondAttribute="trailing" constant="8" id="I0X-iz-K1j"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-sC-fWl">
+                                        <rect key="frame" x="0.0" y="221" width="560" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XU-ov-bQd">
+                                                <rect key="frame" x="8" y="19" width="38" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ya-VN-x91">
+                                                <rect key="frame" x="494" y="12" width="58" height="30"/>
+                                                <state key="normal" title="Voer uit"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3ya-VN-x91" secondAttribute="trailing" constant="8" id="JHQ-qx-8cH"/>
+                                            <constraint firstAttribute="height" constant="50" id="qWz-ar-SNm"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -622,12 +634,20 @@
                         <barButtonItem key="backBarButtonItem" title="Terug" id="rde-ws-8EK"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnAED" destination="3ya-VN-x91" id="L1g-2I-6hw"/>
+                        <outlet property="btnCall" destination="CEM-f7-h7U" id="bxC-Bm-Zks"/>
+                        <outlet property="btnEHBO" destination="rdY-YC-FdD" id="aaN-wD-hPh"/>
+                        <outlet property="btnReanimate" destination="0e7-pd-KII" id="ire-Xx-kVa"/>
                         <outlet property="navItem" destination="RuH-Ui-npG" id="7NE-vB-8mm"/>
+                        <outlet property="viewAED" destination="eZV-sC-fWl" id="s0k-dg-eDB"/>
+                        <outlet property="viewCall" destination="sJt-Bg-8YD" id="On4-UF-hj5"/>
+                        <outlet property="viewEHBO" destination="eq5-AV-H9A" id="pjs-yQ-wX6"/>
+                        <outlet property="viewReanimate" destination="6cY-jY-gUd" id="2ek-eb-SyT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4B-Lg-1iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3258" y="994"/>
+            <point key="canvasLocation" x="3296" y="994"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g9c-dS-8Zv">
@@ -649,6 +669,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CallButton" width="42" height="42"/>
         <image name="SplashScreenIcon" width="443" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
