@@ -22,4 +22,20 @@ class AppManager{
         }
         return nil
     }
+    
+    internal static func boolToActionType(inputBoolean: Bool) -> AppManager.actionType{
+        if (inputBoolean){
+            let randInt = arc4random_uniform(2)
+            if randInt == 0 {
+                return AppManager.actionType.Done
+            }
+            else{
+                return AppManager.actionType.ToDo
+            }
+        } else{
+            return AppManager.actionType.NoNeed
+        }
+    }
+    
+    internal enum actionType {case ToDo, Done, NoNeed}
 }

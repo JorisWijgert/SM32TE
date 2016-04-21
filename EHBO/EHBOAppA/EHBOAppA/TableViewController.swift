@@ -43,10 +43,10 @@ class TableViewController: UITableViewController {
                     title: item.objectForKey("Title") as! String,
                     latitude: item.objectForKey("Latitude") as! Double,
                     longitude: item.objectForKey("Longitude") as! Double,
-                    aed: item.objectForKey("AED") as! Bool,
-                    ehbo: item.objectForKey("EHBO") as! Bool,
-                    reanimeerder: item.objectForKey("Reanimeerder") as! Bool,
-                    ambulance: item.objectForKey("Ambulance") as! Bool,
+                    aed: AppManager.boolToActionType(item.objectForKey("AED") as! Bool),
+                    ehbo: AppManager.boolToActionType(item.objectForKey("EHBO") as! Bool),
+                    reanimeerder: AppManager.boolToActionType(item.objectForKey("Reanimeerder") as! Bool),
+                    ambulance: AppManager.boolToActionType(item.objectForKey("Ambulance") as! Bool),
                     active: item.objectForKey("Active") as! Bool
                 )
                 if(newNotify.getActive()){

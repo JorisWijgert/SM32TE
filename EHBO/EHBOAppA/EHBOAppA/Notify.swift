@@ -13,13 +13,13 @@ class Notify {
     var title:String?
     var latitude:Double?
     var longitude:Double?
-    var aed:Bool?
-    var ehbo:Bool?
-    var reanimeerder:Bool?
-    var ambulance:Bool?
+    var aed:AppManager.actionType?
+    var ehbo:AppManager.actionType?
+    var reanimeerder:AppManager.actionType?
+    var ambulance:AppManager.actionType?
     var active:Bool?
     
-    init(title:String, latitude:Double, longitude:Double, aed:Bool, ehbo:Bool, reanimeerder:Bool, ambulance:Bool, active:Bool) {
+    init(title:String, latitude:Double, longitude:Double, aed:AppManager.actionType, ehbo:AppManager.actionType, reanimeerder:AppManager.actionType, ambulance:AppManager.actionType, active:Bool) {
         self.title = title
         self.latitude = latitude
         self.longitude = longitude
