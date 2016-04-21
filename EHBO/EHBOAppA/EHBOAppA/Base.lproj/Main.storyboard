@@ -691,7 +691,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-jI-XrC">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-jI-XrC">
                                 <rect key="frame" x="20" y="217" width="560" height="363"/>
                             </mapView>
                         </subviews>
@@ -712,7 +712,7 @@
                     </view>
                     <connections>
                         <outlet property="lblInformatie" destination="ZVg-T6-fbm" id="K3i-6t-Aeu"/>
-                        <outlet property="mapLocation" destination="2eX-jI-XrC" id="Xai-m0-twD"/>
+                        <outlet property="mapView" destination="2eX-jI-XrC" id="BdI-uz-a2x"/>
                         <outlet property="titleBar" destination="bou-9d-I4Y" id="AVW-1J-Nma"/>
                     </connections>
                 </viewController>
