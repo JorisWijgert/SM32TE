@@ -688,6 +688,11 @@
                                                 <segue destination="4tV-tA-jIj" kind="presentation" id="Xf1-xS-M9m"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Bevestig" id="FeZ-XJ-cZQ">
+                                            <connections>
+                                                <segue destination="4tV-tA-jIj" kind="presentation" id="fIZ-Gz-73k"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
