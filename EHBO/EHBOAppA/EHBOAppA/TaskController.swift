@@ -32,5 +32,9 @@ class TaskController: UIViewController {
             titleBar.title = "AED"
         }
         
+        let request = MKDirectionsRequest()
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: mapLocation.userLocation.coordinate, addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocation(lat, lon), addressDictionary: nil))
+        
     }
 }
