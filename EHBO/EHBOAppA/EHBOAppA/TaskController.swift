@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class TaskController: UIViewController {
 
@@ -14,6 +15,7 @@ class TaskController: UIViewController {
     
     @IBOutlet weak var lblInformatie: UILabel!
     @IBOutlet weak var titleBar: UINavigationItem!
+    @IBOutlet weak var mapLocation: MKMapView!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -27,5 +29,6 @@ class TaskController: UIViewController {
             lblInformatie.text = "Breng de AED naar de plek van het ongeval. Zie het kaartje beneden voor de kortste route."
             titleBar.title = "AED"
         }
+        
     }
 }

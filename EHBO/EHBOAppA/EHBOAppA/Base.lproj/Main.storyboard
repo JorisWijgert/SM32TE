@@ -670,7 +670,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-T6-fbm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-T6-fbm">
                                 <rect key="frame" x="37" y="91" width="526" height="144"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -691,18 +691,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-jI-XrC">
+                                <rect key="frame" x="20" y="217" width="560" height="363"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2eX-jI-XrC" firstAttribute="top" secondItem="RxJ-7h-Vys" secondAttribute="bottom" constant="173" id="4HM-sS-fvL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZVg-T6-fbm" secondAttribute="trailing" constant="17" id="AOi-rg-GYP"/>
+                            <constraint firstItem="RVI-9e-XLw" firstAttribute="top" secondItem="2eX-jI-XrC" secondAttribute="bottom" constant="20" id="Fy2-D6-g9j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZVg-T6-fbm" secondAttribute="trailing" constant="17" id="I04-oC-lJ3"/>
+                            <constraint firstItem="2eX-jI-XrC" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" id="ITA-yV-FK8"/>
                             <constraint firstItem="ZVg-T6-fbm" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" constant="17" id="KeU-gc-kuG"/>
                             <constraint firstItem="RxJ-7h-Vys" firstAttribute="top" secondItem="iS3-x4-ZBa" secondAttribute="topMargin" id="Ola-de-22T"/>
+                            <constraint firstItem="ZVg-T6-fbm" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" constant="17" id="Yha-4a-KYh"/>
                             <constraint firstItem="RxJ-7h-Vys" firstAttribute="leading" secondItem="iS3-x4-ZBa" secondAttribute="leadingMargin" constant="-20" id="gNL-De-uX3"/>
+                            <constraint firstItem="2eX-jI-XrC" firstAttribute="trailing" secondItem="iS3-x4-ZBa" secondAttribute="trailingMargin" id="luV-4P-hl9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RxJ-7h-Vys" secondAttribute="trailing" constant="-20" id="tll-hF-dDO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblInformatie" destination="ZVg-T6-fbm" id="K3i-6t-Aeu"/>
+                        <outlet property="mapLocation" destination="2eX-jI-XrC" id="Xai-m0-twD"/>
                         <outlet property="titleBar" destination="bou-9d-I4Y" id="AVW-1J-Nma"/>
                     </connections>
                 </viewController>
