@@ -51,7 +51,7 @@ class TableViewController: UITableViewController {
                 )
                 if(newNotify.getActive()){
                     AppManager.busyNotifies.append(newNotify)
-                }else{
+                } else{
                     AppManager.nonBusyNotifies.append(newNotify)
                 }
             }

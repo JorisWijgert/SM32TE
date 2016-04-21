@@ -38,6 +38,7 @@ class ViewController: UIViewController {
             preferences.setValue(currentUser, forKeyPath: currentUserKey)
             let didSave = preferences.synchronize()
             if !didSave{
+                errorMessage.hidden = false
                 errorMessage.text = "Inloggegevens opslaan is mislukt"
             }
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("MainScreen")
