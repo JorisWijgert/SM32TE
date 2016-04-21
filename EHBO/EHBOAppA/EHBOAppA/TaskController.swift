@@ -12,6 +12,8 @@ import MapKit
 class TaskController: UIViewController {
 
     var wissel: Int32?
+    var lat: Double?
+    var lon: Double?
     
     @IBOutlet weak var lblInformatie: UILabel!
     @IBOutlet weak var titleBar: UINavigationItem!

@@ -60,6 +60,8 @@ class NotifyViewController: UIViewController {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!
         controller.wissel = 1
+        controller.lat = selectedNotify?.latitude
+        controller.lon = selectedNotify?.longitude
         self.presentViewController(controller, animated: true, completion: nil)
     }
 
@@ -67,6 +69,8 @@ class NotifyViewController: UIViewController {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!
         controller.wissel = 2
+        controller.lat = selectedNotify?.latitude
+        controller.lon = selectedNotify?.longitude
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
@@ -74,6 +78,8 @@ class NotifyViewController: UIViewController {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!
         controller.wissel = 3
+        controller.lat = selectedNotify?.latitude
+        controller.lon = selectedNotify?.longitude
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
