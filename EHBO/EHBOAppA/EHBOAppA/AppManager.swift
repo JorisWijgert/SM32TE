@@ -39,6 +39,7 @@ class AppManager{
         }
     }
     
+    // definieert de type van een actie (aed, ehbo kist, etc.), of het nog gedaan moet worden, gedaan is, of niet nodig is
     internal enum actionType {
         case ToDo
         case Done

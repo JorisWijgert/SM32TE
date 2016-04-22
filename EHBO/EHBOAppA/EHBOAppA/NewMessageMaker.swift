@@ -16,16 +16,19 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var aedSwitch: UISwitch!
     @IBOutlet weak var oneOneTwoSwitch: UISwitch!
     @IBOutlet weak var reanimaterSwitch: UISwitch!
+    @IBOutlet weak var confirmButton: UIBarButtonItem!
+    
     
     var locationManager: CLLocationManager = CLLocationManager()
     var latestLocation: CLLocation?
     
+    //Constructor voor klasse
     required init?(coder aDecoder: NSCoder) {
-        //super.init: (coder: NSCoder)
         super.init(coder: aDecoder)
         
     }
     
+    //Uitvoeren als scherm is ingeladen, maar nog niet in beeld
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,6 +38,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
+    //heeft geheugen ontvangen...
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,7 +47,7 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
     // Haalt de locatie op
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         latestLocation = locations[locations.count - 1]
-        
+        confirmButton.enabled = true
         CLGeocoder().reverseGeocodeLocation(latestLocation!, completionHandler: {(placemarks, error) in
             if (error != nil) {print("reverse failed")}
             if(placemarks != nil){
@@ -64,18 +68,14 @@ class NewMessageMaker: UIViewController, CLLocationManagerDelegate {
                 self.locationString.text = "\(self.latestLocation!.coordinate.latitude), \(self.latestLocation!.coordinate.longitude)"
             }
         })
-//        var loc:CLLocation?
-//        var latati:CLLocationDegrees?
-//        latati = 12.2
-//        var longitu:CLLocationDegrees?
-//        longitu = 12.1
-//        loc = CLLocation(latitude: latati!, longitude: longitu!)
-        
     }
     
+    //Als locatie niet gevonden kan worden
     func locationManager(manager: CLLocationManager,
                          didFailWithError error: NSError) {
-        locationString.text = "locatie is niet opgehaald"
+        locationString.text = "Locatie is nog niet gevonden"
+        confirmButton.enabled = false
+        
     }
 
     // Hier wordt het ongeval aangemaakt. Deze zal te zien zijn in de lijst.

@@ -450,6 +450,7 @@
                     </view>
                     <connections>
                         <outlet property="aedSwitch" destination="4n1-3q-82z" id="889-cj-rzg"/>
+                        <outlet property="confirmButton" destination="1x1-Ta-8cz" id="aOq-tq-GfG"/>
                         <outlet property="ehboSwitch" destination="w6M-Cm-ahf" id="0CD-GS-hxu"/>
                         <outlet property="locationString" destination="qLH-fI-iyN" id="FGS-kN-anK"/>
                         <outlet property="oneOneTwoSwitch" destination="XDH-lO-4We" id="50h-kF-zW3"/>

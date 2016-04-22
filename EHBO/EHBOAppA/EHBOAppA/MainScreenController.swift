@@ -11,6 +11,7 @@ import UIKit
 class MainScreenController: UIViewController {
     @IBOutlet weak var welcomeMessage: UINavigationItem!
     
+    //Uitvoeren als scherm ingeladen is, maar nog niet in beeld
     override func viewDidLoad() {
         super.viewDidLoad()
         let preferences = NSUserDefaults.standardUserDefaults()

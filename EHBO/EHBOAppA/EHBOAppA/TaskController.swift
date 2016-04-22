@@ -31,19 +31,15 @@ class TaskController: UIViewController {
             lblInformatie.text = "Breng de AED naar de plek van het ongeval. Zie het kaartje beneden voor de kortste route."
             titleBar.title = "AED"
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
         
         let request = MKDirectionsRequest()
         if(mapView.userLocation.coordinate.latitude > 0 && mapView.userLocation.coordinate.longitude > 0){
-                    request.source = MKMapItem(placemark: MKPlacemark(coordinate: mapView.userLocation.coordinate, addressDictionary: nil))
+            request.source = MKMapItem(placemark: MKPlacemark(coordinate: mapView.userLocation.coordinate, addressDictionary: nil))
         }
         else{
             request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D( latitude: 51.456512, longitude: 5.477056), addressDictionary: nil))
         }
-
+        
         request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: lat!, longitude: lon!), addressDictionary: nil))
         request.requestsAlternateRoutes = true
         request.transportType = .Walking
@@ -58,7 +54,14 @@ class TaskController: UIViewController {
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
             }
         }
+        
+        let pinLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(lat!, lon!)
+        let objectAnnotation = MKPointAnnotation()
+        objectAnnotation.coordinate = pinLocation
+        objectAnnotation.title = "Locatie van ongeval"
+        self.mapView.addAnnotation(objectAnnotation)
     }
+
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
