@@ -141,15 +141,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="x7s-1l-C6T"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Registreren" id="bow-UX-hTm">
                                         <barButtonItem key="leftBarButtonItem" title="Annuleren" id="mTq-Jb-0dZ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="logOut:" destination="A82-8n-Coq" id="3d7-Ls-7wt"/>
                                                 <segue destination="BYZ-38-t0r" kind="presentation" id="eOy-Ie-TuJ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Bevestig" id="PPg-gp-5u7">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="RegistrateAction:" destination="dqG-C7-Cg6" id="gsi-Oi-AOx"/>
                                             </connections>
@@ -245,9 +248,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nsH-gC-OP7"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Title" id="KRi-Si-DEt">
                                         <barButtonItem key="leftBarButtonItem" title="Uitloggen" id="a0E-tC-LGT">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="logOut:" destination="A82-8n-Coq" id="LI9-Ul-yta"/>
                                             </connections>
@@ -296,14 +301,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="wKP-pc-R8L"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Nieuwe oproep plaatsen" id="bgl-c2-xg2">
                                         <barButtonItem key="leftBarButtonItem" title="Terug" style="plain" id="ZS0-02-ody">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="A82-8n-Coq" kind="presentation" id="gpx-gt-ksp"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Bevestig" id="1x1-Ta-8cz">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="makeNotify:" destination="FoH-1C-Fyi" id="CZY-SQ-f0D"/>
                                             </connections>
@@ -489,6 +497,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Incidenten" id="pOK-sV-CaV">
                         <barButtonItem key="leftBarButtonItem" title="Terug" id="pOG-Du-mOj" userLabel="Terug">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="btnTerugClick:" destination="AIt-Iu-HEC" id="m9O-Zy-XIG"/>
                             </connections>
@@ -641,7 +650,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="RuH-Ui-npG">
-                        <barButtonItem key="backBarButtonItem" title="Terug" id="rde-ws-8EK"/>
+                        <barButtonItem key="backBarButtonItem" title="Terug" id="rde-ws-8EK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="btnAED" destination="3ya-VN-x91" id="L1g-2I-6hw"/>
@@ -682,14 +693,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="s4r-LD-NBg"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Taak" id="bou-9d-I4Y">
                                         <barButtonItem key="leftBarButtonItem" title="Annuleer" id="E9J-Tf-nEZ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="4tV-tA-jIj" kind="presentation" id="Xf1-xS-M9m"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Bevestig" id="FeZ-XJ-cZQ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="4tV-tA-jIj" kind="presentation" id="fIZ-Gz-73k"/>
                                             </connections>
@@ -732,13 +746,19 @@
         <!--Navigation Controller-->
         <scene sceneID="g9c-dS-8Zv">
             <objects>
-                <navigationController storyboardIdentifier="NavigationToIncidents" automaticallyAdjustsScrollViewInsets="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationToIncidents" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="4tV-tA-jIj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="un4-s6-k5y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="znu-CU-lcc">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="AIt-Iu-HEC" kind="relationship" relationship="rootViewController" id="Unp-FI-gi7"/>
                     </connections>
