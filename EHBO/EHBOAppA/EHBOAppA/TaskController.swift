@@ -66,6 +66,7 @@ class TaskController: UIViewController {
     //sommige dingen van mapview in beeld zetten
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
+        renderer.lineWidth = 3
         renderer.strokeColor = UIColor.blueColor()
         return renderer
     }
