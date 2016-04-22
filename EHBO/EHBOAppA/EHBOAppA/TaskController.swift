@@ -19,6 +19,7 @@ class TaskController: UIViewController {
     @IBOutlet weak var titleBar: UINavigationItem!
     @IBOutlet weak var mapView: MKMapView!
     
+    //Als data ingeladen wordt en de kaart wordt geïnitialiseerd
     override func viewDidLoad(){
         super.viewDidLoad()
         if wissel == 1 {
@@ -37,7 +38,7 @@ class TaskController: UIViewController {
             request.source = MKMapItem(placemark: MKPlacemark(coordinate: mapView.userLocation.coordinate, addressDictionary: nil))
         }
         else{
-            request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D( latitude: 51.456512, longitude: 5.477056), addressDictionary: nil))
+            request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D( latitude: 51.451434, longitude: 5.482777), addressDictionary: nil))
         }
         
         request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: lat!, longitude: lon!), addressDictionary: nil))
@@ -62,7 +63,7 @@ class TaskController: UIViewController {
         self.mapView.addAnnotation(objectAnnotation)
     }
 
-    
+    //sommige dingen van mapview in beeld zetten
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
         renderer.strokeColor = UIColor.blueColor()

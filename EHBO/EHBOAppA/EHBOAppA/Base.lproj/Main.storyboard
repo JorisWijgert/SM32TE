@@ -697,8 +697,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-jI-XrC">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="mapView" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-jI-XrC">
                                 <rect key="frame" x="20" y="217" width="560" height="363"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fph-3d-Xdf" id="PbK-wA-ocC"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

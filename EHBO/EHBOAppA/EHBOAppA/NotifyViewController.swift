@@ -22,6 +22,7 @@ class NotifyViewController: UIViewController {
     
     var selectedNotify: Notify?
     
+    //Als scherm ingeladen is, maar nog niet getoond
     override func viewDidLoad(){
         super.viewDidLoad()
         
@@ -53,9 +54,13 @@ class NotifyViewController: UIViewController {
             btnAED.enabled = false
         }
     }
+    
+    //Bellen naar 112, werkt niet op iPads en emulators, telefoonnummer is nu nog anders, om valse telefoontjes te voorkomen
     @IBAction func CallAction(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "tel://0612345678")!)
     }
+    
+    //Reanimeerinformatie openen
     @IBAction func btnDoReanimate(sender: UIButton) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!
@@ -65,6 +70,7 @@ class NotifyViewController: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil)
     }
 
+    //EHBOkist informatie openen
     @IBAction func btnDoEHBO(sender: UIButton) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!
@@ -74,6 +80,7 @@ class NotifyViewController: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil)
     }
     
+    //AED informatie openen
     @IBAction func btnDoAED(sender: UIButton) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("TaskController")
         let controller:TaskController = (viewController as? TaskController)!

@@ -10,18 +10,20 @@ import UIKit
 import CoreLocation
 
 class SplashScreenController: UIViewController {
-    // Twee gebruikers
+    // Wanneer scherm is ingeladen, maar nog niet getoond
     override func viewDidLoad() {
         super.viewDidLoad()
         AppManager.users.append(User(userName: "Stan", passWord: "Wulms", homeLocation: CLLocation(latitude: CLLocationDegrees(51.18484), longitude: CLLocationDegrees(5.128181))))
         AppManager.users.append(User(userName: "Joris", passWord: "Wijgert", homeLocation: CLLocation(latitude: CLLocationDegrees(51.18484), longitude: CLLocationDegrees(5.128181))))
     }
     
+    //Utvoeren waneer scherm in beeld is
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         autoLogin()
     }
     
+    //Geheugen ontvangen...
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

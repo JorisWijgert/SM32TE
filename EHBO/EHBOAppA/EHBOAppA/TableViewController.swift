@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    
+    //JSON inladen
     func loadJsonData()
     {
         //URL waar de JSON staat.
@@ -33,6 +33,7 @@ class TableViewController: UITableViewController {
         dataTask.resume();
     }
     
+    //JSON omzetten naar informatie
     func parseJSONData(jsonObject:AnyObject) {
         AppManager.busyNotifies.removeAll()
         AppManager.nonBusyNotifies.removeAll()
@@ -60,20 +61,17 @@ class TableViewController: UITableViewController {
         AppManager.busyNotifies.appendContentsOf(AppManager.customNotifies)
         self.tableView.reloadData()
 
-
     }
     
+    //Als scherm is ingeladen, maar nog niet in beeld
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadJsonData()
         sleep(1)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
     
-    //De twee gedeelten in de tabel.
+    //De twee secties in de tabel.
     override func tableView(tableView: UITableView, titleForHeaderInSection section:Int) -> String?{
         if section == 0{
             return "Hulp nodig"
@@ -83,6 +81,7 @@ class TableViewController: UITableViewController {
         }
     }
     
+    //de data in table view zetten
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         //Set the correct value in this cell
@@ -98,10 +97,12 @@ class TableViewController: UITableViewController {
         }
     }
     
+    //aantal secties in de tableview
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
+    //Aantal elementen in de tableview
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
             return AppManager.busyNotifies.count
@@ -111,7 +112,7 @@ class TableViewController: UITableViewController {
         }
     }
     
-    
+    //Acties die uitgevoerd moeten worden als er op een element geklikt wordt in de tableview
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Give information to the next page.
         let selectedRow = self.tableView.indexPathForSelectedRow
@@ -126,6 +127,7 @@ class TableViewController: UITableViewController {
         controller.selectedNotify = selectedNotify;
     }
     
+    //Als er op de terugknop geklikt wordt.
     @IBAction func btnTerugClick(sender: UIBarButtonItem) {
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("MainScreen")
         self.presentViewController(viewController, animated: true, completion: nil)
